@@ -37,3 +37,7 @@ https://atom.io/
 * git-plus
 * [git-plus](https://github.com/nickclaw/atom-grunt-runner/wiki/Config#user-content-troubleshooting-for-yosemite-os-x-1010)
 * activate-power-mode
+
+## WebStrom
+### 安装：
+http://www.jetbrains.com/webstorm/

@@ -5,3 +5,4 @@
 * [Web APP 站点的缓存问题](share/web-cache.md)
 * [Angular 2 vs Angular 1.x](share/angular2vs1.md)
 * [前端工具](share/front-tools.md)
+* [你所不知道的 JavaScript](share/javascript.md)

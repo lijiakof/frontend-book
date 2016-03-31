@@ -31,5 +31,5 @@ var throttle = function(fn, delay) {
 ```
 
 # 参考
-http://drupalmotion.com/article/debounce-and-throttle-visual-explanation
-http://www.alloyteam.com/2012/11/javascript-throttle/
+* http://drupalmotion.com/article/debounce-and-throttle-visual-explanation
+* http://www.alloyteam.com/2012/11/javascript-throttle/

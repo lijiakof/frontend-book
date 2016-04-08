@@ -9,5 +9,6 @@
 * [浏览器工作原理](share/browser-work.md)
 * [认识 Markdown](share/markdown.md)
 * [SASS](share/sass.md)
+* [ES6 vs ES5](share/es6vs5.md)
 
 

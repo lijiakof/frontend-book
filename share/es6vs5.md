@@ -54,6 +54,18 @@ window.b;//undefined
 ```
 
 ### 数组的解构赋值
+### String 的扩展
+### RegExp 的扩展
+### Number 的扩展
+### Array 的扩展
+### Function 的扩展
+### Object 的扩展
+### Symbol
+### Proxy 和 Reflect
+### 二进制数组
+### Set 和 Map
+### Iterator 和 for...of
+
 
 
 

@@ -114,4 +114,16 @@ grunt copy:taskA
 * 加载 Grunt 插件：load-grunt-tasks
 * ...
 
+## 集成到 Sublime
+配置 Sublime 的 Build System `Tools > Build System > New Build System Grunt.sublime.build` 
+
+```
+{
+    "cmd": ["grunt", "--no-color”, “build"],
+    "path": "/bin:/usr/bin:/usr/local/bin",
+    "working_dir": "${project_path:${folder}}",
+    "selector": ["Gruntfile.js"]
+}
+```
+
 

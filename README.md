@@ -2,6 +2,7 @@
 * [Angular 2 vs Angular 1.x](share/angular2vs1.md)
 * [前端工具](share/front-tools.md)
 * [你所不知道的 JavaScript](share/javascript.md)
+* [神奇的 CSS](share/amazing-css.md)
 * [认识 HTML](share/html.md)
 * [认识 Markdown](share/markdown.md)
 * [SASS](share/sass.md)

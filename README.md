@@ -1,5 +1,4 @@
 # 知识分享
-* [Angular 2 vs Angular 1.x](share/angular2vs1.md)
 * [前端工具](share/front-tools.md)
 * [你所不知道的 JavaScript](share/javascript.md)
 * [神奇的 CSS](share/amazing-css.md)
@@ -9,10 +8,12 @@
 * [ES6 vs ES5](share/es6vs5.md)
 * [Grunt](share/grunt.md)
 * [YSlow团队提出的“23条 Web 性能最佳实践和规则”](share/yslow.md)
+* [Angular 2 vs Angular 1.x](share/angular2vs1.md)
 * [函数的 debounce 和 throttle](share/debounce-throttle.md)
 * [Web APP 站点的缓存问题](share/web-cache.md)
 * [浏览器工作原理](share/browser-work.md)
 * [如何解决 Ajax 的跨域问题](share/cross-domain.md)
 * [HTTP 通讯 7 个步骤](share/http.md)
 * [Web 系统架构](share/web-architecture.md)
+* [使用 iconfont 的好处](share/icon-font.md)
 

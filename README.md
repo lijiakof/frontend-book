@@ -1,4 +1,4 @@
-# 知识分享
+# 《Web 前端》目录
 * [前端工具](share/front-tools.md)
 * [你所不知道的 JavaScript](share/javascript.md)
 * [神奇的 CSS](share/amazing-css.md)
@@ -16,4 +16,6 @@
 * [HTTP 通讯 7 个步骤](share/http.md)
 * [Web 系统架构](share/web-architecture.md)
 * [使用 iconfont 的好处](share/icon-font.md)
+* [认识 流程图](share/flow-chart.md)
+
 

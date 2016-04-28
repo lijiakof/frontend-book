@@ -1,6 +1,7 @@
 # 《Web 前端》目录
 * [前端工具](share/front-tools.md)
 * [你所不知道的 JavaScript](share/javascript.md)
+* [CSS 盒模型 vs Flex 布局](share/cssboxmodel-vs-flexbox.md)
 * [神奇的 CSS](share/amazing-css.md)
 * [认识 HTML](share/html.md)
 * [认识 Markdown](share/markdown.md)

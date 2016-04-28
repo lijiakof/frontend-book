@@ -26,6 +26,8 @@ http://www.sublimetext.com/
 	"selector": ["Gruntfile.js"]
 }
 ```
+### 设置
+* 滚动能否超过结尾："scroll_past_end": true
 ### 资料
 * https://segmentfault.com/a/1190000000505218
 
@@ -41,3 +43,5 @@ https://atom.io/
 ## WebStrom
 ### 安装：
 http://www.jetbrains.com/webstorm/
+
+

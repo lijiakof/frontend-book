@@ -111,20 +111,56 @@ CSS3 新增了`desplay:flex`，它使得网页更加弹性适合各种不同的�
 
 ```
 .item {
-  order: <integer>;
+  order: 1;
 }
 ```
-
+![弹性盒子](../resources/images/order.png)
 #### flex-grow
 这个属性是用来设置项目的放大比例，默认为0，即如果存在剩余空间也不放大；如果说有的项目的`flex-grow`属性都为1，那么它们会均分剩余的空间，如果一个项目的`flex-grow`属性为2，其他项目都为1，则为2的占据的剩余空间将比其他项多一倍。
 
+```
+.item {
+  flex-grow: 1;
+}
+```
+![弹性盒子](../resources/images/flex-grow.png)
 #### flex-shrink
+这个属性是用来设置项目的缩小比例，默认1，如果空间不足，则该项目缩小；如果一个项目的`flex-shrink`的属性为0，其它为1，则空间不足时，前者不缩小。
 
+```
+.item {
+  flex-shrink: 1;
+}
+```
+![弹性盒子](../resources/images/flex-shrink.png)
 #### flex-basis
+这个属性定义了在分配多余空间前，项目占据的主轴空间，它的默认值为`auto`，即项目本来的大小。
+
+```
+.item {
+  flex-basis: 200px;
+}
+```
 
 #### flex
+它是属性`flex-grow`、`flex-shrink`和`flex-basis`的简写，默认值为`0 1 auto`，后两个属性为可选项。
+
+```
+.item {
+  flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ];
+}
+```
 
 #### align-self
+它是用来设置单个项目的在交叉轴上的对齐方式，它会覆盖`align-items`属性的值，默认值为`auto`，即继承了父级元素的`align-items`属性。
+
+```
+.item {
+  align-self: auto | flex-start | flex-end | center | baseline | stretch;
+}
+```
+![弹性盒子](../resources/images/align-self.png)
+
 
 
 

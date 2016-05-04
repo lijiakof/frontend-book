@@ -6,11 +6,11 @@
 	* [SASS](share/sass.md)
 	* [你所不知道的 JavaScript](share/javascript.md)
 	* [ES6 vs ES5](share/es6vs5.md)
-	* [认识 Git](share/git.md)
 	* [认识 Markdown](share/markdown.md)
 
 * 进阶
 	* [CSS 盒模型 vs Flex 布局](share/cssboxmodel-vs-flexbox.md)
+	* [CSS3 动画](share/css3-animation.md)
 	* [YSlow团队提出的“23条 Web 性能最佳实践和规则”](share/yslow.md)
 	* [使用 iconfont 的好处](share/icon-font.md)
 	* [本地存储与 Cookies 的区别](share/storage-vs-cookies.md)
@@ -34,6 +34,7 @@
 	* [认识流程图](share/flow-chart.md)
 
 * TODO
+	* [认识 Git](share/git.md)
 	* [如何打造属于自己的框架](share/framework.md)
 	* [传说中的九种算法](share/algorithm.md)
 	* React
@@ -42,4 +43,5 @@
 	* UML
 	* Scrum 敏捷
 	* transition与visibility
+	* CSS3 媒体查询
 

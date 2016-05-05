@@ -44,4 +44,7 @@
 	* Scrum 敏捷
 	* transition与visibility
 	* CSS3 媒体查询
+	* HTML meta
+	* SVG
+	* Canvas
 

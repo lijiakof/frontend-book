@@ -2,8 +2,8 @@
 * 基础
 	* [前端工具](share/front-tools.md)
 	* [认识 HTML](share/html.md)
-	* [HTML meta](share/html-meta.md)
 	* [神奇的 CSS](share/amazing-css.md)
+	* [`px` vs `em` vs `rem`](share/px-em-rem.md)
 	* [SASS](share/sass.md)
 	* [你所不知道的 JavaScript](share/javascript.md)
 	* [ES6 vs ES5](share/es6vs5.md)
@@ -43,9 +43,12 @@
 	* Webpack
 	* UML
 	* Scrum 敏捷
-	* transition与visibility
+	* transition 与 visibility
 	* CSS3 媒体查询
 	* SVG
 	* Canvas
 	* Promise 编程
+	* [HTML meta](share/html-meta.md)
+	* WebSocket
+	* HTML viewport
 

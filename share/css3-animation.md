@@ -177,7 +177,117 @@ CSS3 中有三个关于动画的样式属性`transform`、`transition`和`animat
 ```
 
 ## animation
+`animation`比较类似于 flash 中的**逐帧动画**，逐帧动画就像电影的播放一样，表现非常细腻并且有非常大的灵活性。然而`transition`只是指定了开始和结束态，整个动画的过程也是由特定的函数控制。学习过 flash 的同学知道，这种逐帧动画是由**关键帧**组成，很多个关键帧连续的播放就组成了动画，在 CSS3 中是由属性`keyframes`来完成逐帧动画的。
+
+### @keyframes
+
+```
+@keyframes animationName {
+	from {
+		properties: value;
+	}
+	percentage {
+		properties: value;
+	}
+	to {
+		properties: value;
+	}
+}
+//or
+@keyframes animationName {
+	0% {
+		properties: value;
+	}
+	percentage {
+		properties: value;
+	}
+	100% {
+		properties: value;
+	}
+}
+```
+
+* animationName：动画名称，开发人员自己命名；
+* percentage：为百分比值，可以添加多个百分比值；
+* properties：样式属性名称，例如：`color`、`left`、`width`等等。
+
+### animation-name
+它是用来设置动画的名称，可以同时赋值多个动画名称，用`,`隔开：
+
+```
+.animation {
+	animation-name: none | IDENT[,none | IDENT]*;
+}
+```
+
+### animation-duration
+它是用来设置动画的持续时间，单位为`s`，默认值为`0`：
+
+```
+.animation {
+	animation-duration: <time>[,<time>]*;
+}
+```
+### animation-timing-function
+和`transition-timing-function`类似：
+
+```
+.animation {
+	animation-timing-function:ease | linear | ease-in | ease-out | ease-in-out | cubic-bezier(<number>, <number>, <number>, <number>) [, ease | linear | ease-in | ease-out | ease-in-out | cubic-bezier(<number>, <number>, <number>, <number>)]*;
+}
+```
+
+### animation-delay
+它是来设置动画的开始时间，单位是`s`或者`ms`，默认值为0：
+
+```
+.animation {
+	animation-delay: <time>[,<time>]*;
+}
+```
+
+### animation-iteration-count
+它是来设置动画循环的次数，默认为`1`，`infinite`为无限次数的循环：
+
+```
+.animation {
+	animation-iteration-count:infinite | <number> [, infinite | <number>]*;
+}
+```
+
+### animation-direction
+它是来设置动画播放的方向，默认值为`normal`表示向前播放，`alternate`代表动画播放在第偶数次向前播放，第奇数次向反方向播放：
+
+```
+.animation {
+	animation-direction: normal | alternate [, normal | alternate]*;
+}
+```
+
+### animation-play-state
+它主要是来控制动画的播放状态：`running`代表播放，而`paused`代表停止播放，`running`为默认值：
+
+```
+.animation {
+	animation-play-state:running | paused [, running | paused]*;
+}
+```
+
+### animation
+它是`animation-name`、`animation-duration`、`animation-timing-function`、`animation-delay`、`animation-iteration-count`、`animation-direction`的简写：
+
+```
+.animation {
+	animation:[<animation-name> || <animation-duration> || <animation-timing-function> || <animation-delay> || <animation-iteration-count> || <animation-direction>] [, [<animation-name> || <animation-duration> || <animation-timing-function> || <animation-delay> || <animation-iteration-count> || <animation-direction>] ]*;
+}
+```
+
+### 举个栗子
+
+
 ## 总结一下
+关于 CSS3 的动画的三个属性`transform`、`transition`、`animation`我们都介绍完了，让我们回顾一下。`transform`我们可以理解为元素的几何变形，它是有规律可寻的，这种变形并不会产生动画效果仅仅是原有形状的改变；`transition`和`animation`它们很像 flash 中的**补间动画**和**逐帧动画**；`transition`是从一个状态变化到另外一种状态，当变化有了平滑的效果后就产生了动画，它是一个公式化的变化，在比较规则的动画效果中我们可以使用，例如：旋转的风车、行驶的汽车、颜色的渐变等等；`animation`的动画效果更加灵活，可以实现像影片一样的复杂无规则的动画。
+
 
 
 

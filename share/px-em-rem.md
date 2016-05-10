@@ -1,4 +1,4 @@
-# px、em、rem
+# px vs em vs rem
 `px`、`em`和`rem`都是网页设计中的长度单位。`px`是最常用的单位，它是 Pixel 的缩写代表像素，它是计算机图像显示的最小单位；`em`（font size of the element）它是一个相对大小的单位，它的大小会相对于它的父级元素的字体大小；`rem`（font size of the root element）它也是一个相对大小的单位，但是它相对于根元素字体的大小；
 
 ## px

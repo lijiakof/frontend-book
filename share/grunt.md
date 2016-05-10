@@ -112,6 +112,7 @@ grunt copy:taskA
 * 静态资源文件版本：grunt-rev
 * 任务运行时间插件：time-grunt
 * 加载 Grunt 插件：load-grunt-tasks
+* 自动添加样式前缀：grunt-autoprefixer
 * ...
 
 ## 集成到 Sublime

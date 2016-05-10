@@ -2,6 +2,7 @@
 * 基础
 	* [前端工具](share/front-tools.md)
 	* [认识 HTML](share/html.md)
+	* [checkbox 的四种状态](share/checkbox-state.md)
 	* [神奇的 CSS](share/amazing-css.md)
 	* [`px` vs `em` vs `rem`](share/px-em-rem.md)
 	* [SASS](share/sass.md)
@@ -51,4 +52,6 @@
 	* [HTML meta](share/html-meta.md)
 	* WebSocket
 	* HTML viewport
+	* JavaScript |、||、&、&&
+	* 如何制作 0.5 像素的细线
 

@@ -3,6 +3,7 @@
 	* [前端工具](share/front-tools.md)
 	* [认识 HTML](share/html.md)
 	* [checkbox 的四种状态](share/checkbox-state.md)
+	* [HTML meta](share/html-meta.md)
 	* [神奇的 CSS](share/amazing-css.md)
 	* [`px` vs `em` vs `rem`](share/px-em-rem.md)
 	* [SASS](share/sass.md)
@@ -49,9 +50,13 @@
 	* SVG
 	* Canvas
 	* Promise 编程
-	* [HTML meta](share/html-meta.md)
 	* WebSocket
 	* HTML viewport
 	* JavaScript |、||、&、&&
 	* 如何制作 0.5 像素的细线
+	* [贝塞尔曲线](share/bezier.md)
+	* 离线缓存
+	* AMD vs CMD
+	* Systemjs
+	* 设计模式
 

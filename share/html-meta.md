@@ -81,6 +81,13 @@
 <meta name="revisit-after" content="30day" />
 ```
 
+#### name="viewport"
+它是来控制浏览器窗口的大小和缩放的，由于它在现代浏览器，特别是 Mobile 端浏览器非常常用，我们会用专门的一片文章来讲解它：
+
+```
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+```
+
 ### http-equiv 属性
 `http-equiv`相当于 HTTP 的文件头的设置。语法：
 

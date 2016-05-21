@@ -23,7 +23,7 @@
 * [如何解决 Ajax 的跨域问题](share/cross-domain.md)
 
 ## 高级
-* [原型（Prototype）](share/js-prototype.md)
+* [原型 Prototype](share/js-prototype.md)
 * [函数的 debounce 和 throttle](share/debounce-throttle.md)
 * [HTTP 通讯 7 个步骤](share/http.md)
 * [浏览器工作原理](share/browser-work.md)

@@ -8,4 +8,5 @@
 * http://www.quirksmode.org/mobile/viewports2.html
 * http://www.quirksmode.org/mobile/metaviewport/
 * http://viewportsizes.com/
+* https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html
 

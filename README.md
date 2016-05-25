@@ -30,6 +30,7 @@
 
 ## 持续构建
 * [Grunt](share/grunt.md)
+* [Gulp](share/gulp.md)
 
 ## 架构框架
 * [Angular 2 vs Angular 1.x](share/angular2vs1.md)
@@ -44,7 +45,6 @@
 * [如何打造属于自己的框架](share/framework.md)
 * [传说中的九种算法](share/algorithm.md)
 * React
-* [Gulp](share/gulp.md)
 * Webpack
 * UML
 * Scrum 敏捷

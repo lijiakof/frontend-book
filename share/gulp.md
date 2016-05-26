@@ -33,33 +33,63 @@ gulp.task('default', function() {
 });
 ```
 
-### 创建一个拷贝任务
+### 创建一个 js 压缩混淆任务
 
 ```
 var gulp = require('gulp');
-var copy = require('gulp-file-copy');
+var uglify = require('gulp-uglify');
 
-gulp.task('copy', function() {
-	gulp.src('./app')
-	.pipe(copy('./dist'), {
-		start: './app'
-	});
+gulp.task('uglify', function() {
+	return gulp.src('app/scripts/app.js')
+	.pipe(uglify())
+	.pipe(gulp.dest('debug/scripts/'));
 });
 ```
 
 ### 执行任务
 
 ```
-gulp copy
+gulp uglify
 ```
 
 ## API
 ### gulp.src(globs[, options])
+通过`glob`模式来设置需要处理的文件。它会返回一个 `Vinyl files`（vinyl 文件对象）的 `stream`（数据流），它可以被 piped 到插件中去。
+
+* globs：需要处理的文件；
+* options：
+	* options.buffer：
+	* options.read：
+	* options.base：
+
+[glob](https://github.com/isaacs/node-glob) 是通过特殊的匹配字符串，返回文件和文件夹。[vinyl-fs](https://github.com/wearefractal/vinyl-fs) 是一种“虚拟文件格式”。
 
 ### gulp.dest(path[, options])
+这个方法创建了一个可写流，它重新使用可读流中的文件名，然后在必要时创建文件夹。在写入操作完成后，你能够继续使用这个流（比如：你需要使用gzip压缩数据并写入到其他文件）。
+
+* path：输出路径；
+* options：
+
 ### gulp.task(name[, deps], fn)
+定义一个任务。
+
+* name：任务名称；
+* deps：任务依赖列表，列表中的任务会在当前任务执行之前完成；
+* fn：该函数定义任务所要执行的一些操作，通常形式：`gulp.src().pipe(plugin()).pipe(gulp.desc())`
+
 ### gulp.watch(glob [, opts], tasks)
+它是用来监视文件，当文件发生改变后会执行一些任务。
+
+* glob：监控哪些文件的变动；
+* opts
+* tasks：执行哪些任务；
+
 ### gulp.watch(glob[, opts, cb])
+它是用来监视文件，当文件发生改变后会执行回调。
+
+* glob：监控哪些文件的变动；
+* opts
+* cb：回调函数；
 
 ## 常用插件
 * gulp-ruby-sass
@@ -69,6 +99,7 @@ gulp copy
 
 ## 参考
 * https://github.com/gulpjs/gulp
+* http://gulpjs.com/plugins/
 
 
 

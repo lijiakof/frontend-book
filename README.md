@@ -23,6 +23,7 @@
 * [如何解决 Ajax 的跨域问题](share/cross-domain.md)
 
 ## 高级
+* [Mobile Web 如何制作 0.5 像素的细线](share/css-half-border.md)
 * [原型 Prototype](share/js-prototype.md)
 * [函数的 debounce 和 throttle](share/debounce-throttle.md)
 * [HTTP 通讯 7 个步骤](share/http.md)
@@ -56,7 +57,6 @@
 * WebSocket
 * WebWorks
 * JavaScript |、||、&、&&
-* 如何制作 0.5 像素的细线
 * [贝塞尔曲线](share/bezier.md)
 * 离线缓存
 * AMD vs CMD

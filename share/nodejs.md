@@ -65,7 +65,7 @@ $ npm install express --save
 
 另外还需要安装 EJS 模版引擎：[点击查看](https://github.com/tj/ejs)
 
-然后开始创建基于 Express 的服务：
+然后开始创建基于 Express 的服务。一下为`express.js`文件代码：
 
 ```
 var express = require("express");
@@ -95,6 +95,19 @@ app.get("/ejs", function(req, resp) {
 });
 
 app.listen(8888);
+```
+
+创建模版`app.ejs`文件：
+
+```
+<h1>
+	<%=title%>
+</h1>
+<ul>
+<%for(var i=0; i<list.length; i++){%>
+	<li><%=list[i]%></li>
+<%}%>
+</ul>
 ```
 
 启动服务：

@@ -121,10 +121,46 @@ curl -u prerender:test http://localhost:1337/http://example.com -> 200
 ```
 
 ### prerender.removeScriptTags()
+去除 script 标签是因为我们并不想让已经渲染好的 HTML 再被 Javascript 框架渲染，爬虫或许不会执行脚本。
+
+例如，如果一个基于 Angular 的页面已经被渲染成了 HTML，但是还保留 Angular 脚本在页面上，浏览器将在页面上有一次执行 Angular 进行渲染并且绑定数据。
+
+这个插件实现了`beforeSend`方法，因此被缓存的 HTML 页面仍然包含 script 标签。
+
 ### prerender.httpHeaders()
+如果脚本路由过程中发现了类似于404的错误，我们可以让 Prerender 服务给搜索引擎返回404，这样搜索引擎将不会收录这个页面。
+
+如果想要返回 HTTP Headers，增加如下标签在页面的`<head>`中。注：Prerender 仍然发送页面的 HTML，它仅仅是改变了 HTTP Header 的状态码。
+
+例如：让 Prerender 返回404页面：
+
+```
+<meta name="prerender-status-code" content="404">
+```
+
+例如：让 Prerender 返回302跳转：
+
+```
+<meta name="prerender-status-code" content="302">
+<meta name="prerender-header" content="Location: http://www.google.com">
+```
+
 ### prerender.whitelist()
+如果只允许访问指定的域名，使用这个插件会让其它域名返回404。我们可以在这个插件中增加白名单域名，或者用`ALLOWED_DOMAINS`环境变量：
+
+```
+export ALLOWED_DOMAINS=www.prerender.io,prerender.io
+```
+
 ### prerender.blacklist()
+如果我们不允许指定的域名访问，使用这个插件会让这些域名返回404。我们可以在这个插件中增加黑名单域名，或者用`BLACKLISTED_DOMAINS`环境变量：
+
+```
+export BLACKLISTED_DOMAINS=yahoo.com,www.google.com
+```
+
 ### prerender.s3HtmlCache()
+
 ### prerender.Region()
 ### prerender.inMemoryHtmlCache()
 ### prerender.logger()
@@ -132,6 +168,9 @@ curl -u prerender:test http://localhost:1337/http://example.com -> 200
 ### prerender.memjsCache()
 ### prerender.levelCache()
 ### prerender.accessLog()
+
+## 参考
+https://github.com/prerender/prerender
 
 
 

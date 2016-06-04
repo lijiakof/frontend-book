@@ -122,6 +122,12 @@ $ node http.js`
 * http://localhost:8888/json
 * http://localhost:8888/ejs
 
+## 将 Node 应用变成服务
+虽然到此我们可以编写出基于 Node 的应用，但是还需要一步让这个应用能够真正的成为一个稳定的服务，让它永久的保留在后台并且能够自动的启动服务，其实有很多第三方的方案或者组件可以解决这一问题：
+
+* [forever](https://github.com/foreverjs/forever)
+* [PM2](https://github.com/Unitech/pm2)
+
 ## 总结
 Node 为运行在服务器端的 JavaScript，它基于 Google 的 V8 引擎，有着强大的性能和丰富的插件，它是全栈工程师的首选利器。
 

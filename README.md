@@ -29,7 +29,7 @@
 * [函数的 debounce 和 throttle](share/debounce-throttle.md)
 * [HTTP 通讯 7 个步骤](share/http.md)
 * [浏览器工作原理](share/browser-work.md)
-* [Prerender](share/prerender-server.md)
+* [Prerender（JavaScript 网站静态化）](share/prerender-server.md)
 
 ## 持续构建
 * [Grunt](share/grunt.md)

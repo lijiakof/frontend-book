@@ -160,14 +160,61 @@ export BLACKLISTED_DOMAINS=yahoo.com,www.google.com
 ```
 
 ### prerender.s3HtmlCache()
+GET 请求会检查 S3 缓存，如果发现已经被缓存将直接返回缓存的内容，否则请求会发送到服务器并将渲染出来的 HTML 缓存到 S3 缓存。
+
+POST 请求会跳过 S3 缓存，请求会发送到服务器并将渲染出来的 HTML 缓存到 S3 缓存。也就是说 POST 一直在更新缓存。
+
+我们需要登录到 AWS 服务器上并且设置如下3个环境变量：
+
+```
+$ export AWS_ACCESS_KEY_ID=<aws access key>
+$ export AWS_SECRET_ACCESS_KEY=<aws secret access key>
+$ export S3_BUCKET_NAME=<bucket name>
+```
+
+注意！设置的这些 KEY 必须保证私有的，而且需要设置所有的文件并上传到 S3。
 
 ### prerender.Region()
+默认情况下 s3HtmlCache 时区是美国东部区，如果我们的存储在本地而非美国东部区，可以通过设置环境变量`AWS_REGION`来解决：
+
+```
+$ export AWS_REGION=<region name>
+```
+
+例如：
+
+```
+$ export AWS_REGION=eu-west-1
+```
+
 ### prerender.inMemoryHtmlCache()
+注意每个进程都会有本地内存缓存，如果我们采用多线程 Prerender 运行时，这些缓存并不公用。
+
+本地内存缓存插件很容易将它变成缓存系统，并且它和`cache-manager` Nodejs 插件非常兼容。
+
+比如如下请求：
+
+```
+GET http://service.prerender.io/https://www.facebook.com/
+```
+
+首次耗时：00:00:03.3174661
+用了缓存后耗时：00:00:00.0360119
+
 ### prerender.logger()
+通过这个插件可以打印出日志，对调试有非常大的帮助。
+
 ### prerender.mongodbCache()
+这个插件可以将页面缓存到 MongoDB 数据库，点击这个链接：[prerender-mongodb-cache](https://github.com/lammertw/prerender-mongodb-cache)
+
 ### prerender.memjsCache()
+这个插件可以将页面缓存到 Memcache 服务，点击这个链接：[prerender-memjs-cache](https://github.com/lammertw/prerender-memjs-cache)
+
 ### prerender.levelCache()
+这个插件可以将页面缓存到 levelDB 数据库，点击这个链接：[prerender-level-cache](https://github.com/maxlath/prerender-level-cache)
+ 
 ### prerender.accessLog()
+这个插件可以将请求日志保存到 access，点击这个链接：[prerender-access-log](https://github.com/unDemian/prerender-access-log)
 
 ## 参考
 https://github.com/prerender/prerender

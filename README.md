@@ -15,7 +15,6 @@
 * [CSS line-height](share/css-line-height.md)
 * [CSS 盒模型 vs Flex 布局](share/cssboxmodel-vs-flexbox.md)
 * [CSS3 动画](share/css3-animation.md)
-* [YSlow团队提出的“23条 Web 性能最佳实践和规则”](share/yslow.md)
 * [使用 iconfont 的好处](share/icon-font.md)
 * [本地存储与 Cookies 的区别](share/storage-vs-cookies.md)
 * [JavaScript 中的 this](share/javascript-this.md)
@@ -29,6 +28,8 @@
 * [函数的 debounce 和 throttle](share/debounce-throttle.md)
 * [HTTP 通讯 7 个步骤](share/http.md)
 * [浏览器工作原理](share/browser-work.md)
+* [Promise 编程](share/js-promise.md)
+* [YSlow团队提出的“23条 Web 性能最佳实践和规则”](share/yslow.md)
 * [Prerender（JavaScript 网站静态化）](share/prerender-server.md)
 
 ## 持续构建
@@ -50,12 +51,11 @@
 * React
 * Webpack
 * UML
-* Scrum 敏捷
+* [初识 Scrum 敏捷](share/agile-scrum.md)
 * transition 与 visibility
 * CSS3 媒体查询
 * SVG
 * Canvas
-* Promise 编程
 * WebSocket
 * WebWorks
 * JavaScript |、||、&、&&
@@ -66,4 +66,5 @@
 * 设计模式
 * Glob 语法
 * MVC&MVP&MVVM
+* 一致性hash算法
 

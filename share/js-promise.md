@@ -76,6 +76,15 @@ promise.then(function(){
 * [co](https://github.com/tj/co)
 * [then](https://github.com/cujojs/when)
 
+## 参考：
+
+* https://promisesaplus.com/
+* http://www.jianshu.com/p/063f7e490e9a
+* https://www.promisejs.org/
+* https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise
+* http://es6.ruanyifeng.com/#docs/promise
+* http://www.cnblogs.com/dojo-lzz/p/4340897.html
+
 
 
 

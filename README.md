@@ -27,10 +27,10 @@
 * [原型 Prototype](share/js-prototype.md)
 * [函数的 debounce 和 throttle](share/debounce-throttle.md)
 * [HTTP 通讯 7 个步骤](share/http.md)
-* [浏览器工作原理](share/browser-work.md)
 * [Promise 编程](share/js-promise.md)
 * [YSlow团队提出的“23条 Web 性能最佳实践和规则”](share/yslow.md)
 * [Prerender（JavaScript 网站静态化）](share/prerender-server.md)
+* [一致性hash算法](share/consistent-hashing.md)
 
 ## 持续构建
 * [Grunt](share/grunt.md)
@@ -44,6 +44,7 @@
 * [认识流程图](share/flow-chart.md)
 
 ## TODO
+* [浏览器工作原理](share/browser-work.md)
 * [Viewport](share/html-meta-viewport.md)
 * [认识 Git](share/git.md)
 * [如何打造属于自己的框架](share/framework.md)
@@ -66,5 +67,4 @@
 * 设计模式
 * Glob 语法
 * MVC&MVP&MVVM
-* 一致性hash算法
 

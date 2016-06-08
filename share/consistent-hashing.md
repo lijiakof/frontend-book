@@ -18,7 +18,7 @@
 ![环形 Hash 空间](../resources/images/consistent-hashing-ring.png)
 
 ### 把对象映射到环形 Hash 空间
-我们可以将 obj1、obj2、obj3、obj4、obj5 五个对象通过 Hash 算法计算出来的 key 值映射到环形 Hash 空间。
+我们可以将 obj1、obj2、obj3、obj4、obj5、obj6 六个对象通过 Hash 算法计算出来的 key 值映射到环形 Hash 空间。
 
 ```
 Hash(obj1) = key1;
@@ -26,6 +26,7 @@ Hash(obj2) = key2;
 Hash(obj3) = key3;
 Hash(obj4) = key4;
 Hash(obj5) = key5;
+Hash(obj6) = key6;
 ```
 
 ![环形 Hash 空间的对象](../resources/images/consistent-hashing-object.png)

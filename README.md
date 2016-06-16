@@ -40,8 +40,9 @@
 * [Angular 2 vs Angular 1.x](share/angular2vs1.md)
 * [Web 系统架构](share/web-architecture.md)
 
-## 工程化
+## 软件工程
 * [认识流程图](share/flow-chart.md)
+* [初识 Scrum 敏捷](share/agile-scrum.md)
 
 ## TODO
 * [浏览器工作原理](share/browser-work.md)
@@ -52,7 +53,6 @@
 * React
 * Webpack
 * UML
-* [初识 Scrum 敏捷](share/agile-scrum.md)
 * transition 与 visibility
 * CSS3 媒体查询
 * SVG

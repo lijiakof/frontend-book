@@ -20,6 +20,7 @@
 * [JavaScript 中的 this](share/javascript-this.md)
 * [Web APP 站点的缓存问题](share/web-cache.md)
 * [如何解决 Ajax 的跨域问题](share/cross-domain.md)
+* [Html5 新特性之 Websocket](share/html5-websocket.md)
 * [Nodejs](share/nodejs.md)
 
 ## 高级
@@ -57,7 +58,6 @@
 * CSS3 媒体查询
 * SVG
 * Canvas
-* WebSocket
 * WebWorks
 * JavaScript |、||、&、&&
 * [贝塞尔曲线](share/bezier.md)

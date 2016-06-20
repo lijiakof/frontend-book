@@ -46,7 +46,7 @@
 * [初识 Scrum 敏捷](share/agile-scrum.md)
 
 ## TODO
-* [浏览器工作原理](share/browser-work.md)()
+* [浏览器工作原理](share/browser-work.md)
 * [Viewport](share/html-meta-viewport.md)
 * [认识 Git](share/git.md)
 * [如何打造属于自己的框架](share/framework.md)
@@ -67,4 +67,5 @@
 * 设计模式
 * Glob 语法
 * MVC&MVP&MVVM
+* Yeoman
 

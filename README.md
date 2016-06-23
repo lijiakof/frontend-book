@@ -43,6 +43,7 @@
 
 ## 软件工程
 * [认识流程图](share/flow-chart.md)
+* [UML 之时序图](share/uml-sequence.md)
 * [初识 Scrum 敏捷](share/agile-scrum.md)
 
 ## TODO

@@ -28,6 +28,7 @@
 * [原型 Prototype](share/js-prototype.md)
 * [函数的 debounce 和 throttle](share/debounce-throttle.md)
 * [HTTP 通讯 7 个步骤](share/http.md)
+* [HTTP 缓存机制](share/http-cache.md)
 * [Promise 编程](share/js-promise.md)
 * [YSlow团队提出的“23条 Web 性能最佳实践和规则”](share/yslow.md)
 * [Prerender（JavaScript 网站静态化）](share/prerender-server.md)
@@ -55,6 +56,7 @@
 * React
 * Webpack
 * UML
+* UML 之协作图
 * transition 与 visibility
 * CSS3 媒体查询
 * SVG

@@ -11,6 +11,17 @@
 
 ![border](../resources/images/css-border-triangle.png)
 
+
+```
+.triangle {
+	width: 0;
+	height: 0;
+	border-top: 50px solid #ccc;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+}
+```
+
 ### 画箭头
 那么如何才用 border 来画箭头乐，只需要用一个边框（颜色需要和背景颜色一致）来重叠挡住另外一个边框即可。
 
@@ -28,6 +39,16 @@ CSS 3 的出现，让 DOM 有了变形的效果，我们可以通过一些简单
 利用边框加上旋转，我们设置两个相邻的边框，然后做 45 度的旋转，这样就可以得到不同类型的箭头了：
 
 ![transform](../resources/images/css-transform-arrow.png)
+
+```
+.arrow {
+	width: 50px;
+	height: 50px;
+	border-top: 5px solid #ccc;
+	border-left: 5px solid #ccc;
+	transform: rotate(45deg)
+}
+```
 
 ### 画三角形
 如果要画三角形的话，我们需要在这个箭头上增加一条变长线就可以了。

@@ -24,7 +24,6 @@
 * [Nodejs](share/nodejs.md)
 
 ## 高级
-* [Mobile Web 如何制作 0.5 像素的细线](share/css-half-border.md)
 * [原型 Prototype](share/js-prototype.md)
 * [函数的 debounce 和 throttle](share/debounce-throttle.md)
 * [HTTP 通讯 7 个步骤](share/http.md)
@@ -33,6 +32,10 @@
 * [YSlow团队提出的“23条 Web 性能最佳实践和规则”](share/yslow.md)
 * [Prerender（JavaScript 网站静态化）](share/prerender-server.md)
 * [一致性hash算法](share/consistent-hashing.md)
+
+## 技巧
+* [Mobile Web 如何制作 0.5 像素的细线](share/css-half-border.md)
+* [如何用 CSS 画三角形和箭头](share/css-triangle-arrow.md)
 
 ## 持续构建
 * [Grunt](share/grunt.md)
@@ -71,4 +74,6 @@
 * Glob 语法
 * MVC&MVP&MVVM
 * Yeoman
+* 如何制作 10px 或者更小像素的字体
+* 巧用 after 伪类
 

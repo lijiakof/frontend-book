@@ -41,6 +41,7 @@
 ## 持续构建
 * [Grunt](share/grunt.md)
 * [Gulp](share/gulp.md)
+* [Bower](share/bower.md)
 
 ## 架构框架
 * [Angular 2 vs Angular 1.x](share/angular2vs1.md)

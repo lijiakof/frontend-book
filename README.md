@@ -36,6 +36,7 @@
 ## 技巧
 * [Mobile Web 如何制作 0.5 像素的细线](share/css-half-border.md)
 * [如何用 CSS 画三角形和箭头](share/css-triangle-arrow.md)
+* [如何制作 10px 或者更小像素的字体](share/css-fontsize-10px.md)
 
 ## 持续构建
 * [Grunt](share/grunt.md)
@@ -74,7 +75,6 @@
 * Glob 语法
 * MVC&MVP&MVVM
 * Yeoman
-* 如何制作 10px 或者更小像素的字体
 * 巧用 after 伪类
 * Mobile 端如何去除 input 框的选中样式
 

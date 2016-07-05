@@ -28,6 +28,7 @@
 * [函数的 debounce 和 throttle](share/debounce-throttle.md)
 * [HTTP 通讯 7 个步骤](share/http.md)
 * [HTTP 缓存机制](share/http-cache.md)
+* [事件的触发顺序](share/event-sequence.md)
 * [Promise 编程](share/js-promise.md)
 * [YSlow团队提出的“23条 Web 性能最佳实践和规则”](share/yslow.md)
 * [Prerender（JavaScript 网站静态化）](share/prerender-server.md)
@@ -53,6 +54,7 @@
 * [初识 Scrum 敏捷](share/agile-scrum.md)
 
 ## TODO
+* [Yeoman](share/yeoman.md)
 * [浏览器工作原理](share/browser-work.md)
 * [Viewport](share/html-meta-viewport.md)
 * [认识 Git](share/git.md)
@@ -61,7 +63,8 @@
 * React
 * Webpack
 * UML
-* UML 之协作图
+* [UML 之协作图](share/uml-collaboration.md)
+* [UML 之活动图](share/uml-activity.md)
 * transition 与 visibility
 * CSS3 媒体查询
 * SVG
@@ -75,7 +78,7 @@
 * 设计模式
 * Glob 语法
 * MVC&MVP&MVVM
-* Yeoman
 * 巧用 after 伪类
 * Mobile 端如何去除 input 框的选中样式
+* 事件的冒泡
 

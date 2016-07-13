@@ -51,6 +51,7 @@
 ## 软件工程
 * [认识流程图](share/flow-chart.md)
 * [UML 之时序图](share/uml-sequence.md)
+* [UML 之活动图](share/uml-activity.md)
 * [初识 Scrum 敏捷](share/agile-scrum.md)
 
 ## TODO
@@ -64,7 +65,6 @@
 * Webpack
 * UML
 * [UML 之协作图](share/uml-collaboration.md)
-* [UML 之活动图](share/uml-activity.md)
 * transition 与 visibility
 * CSS3 媒体查询
 * SVG
@@ -78,7 +78,11 @@
 * 设计模式
 * Glob 语法
 * MVC&MVP&MVVM
+* Web Notification
 * 巧用 after 伪类
 * Mobile 端如何去除 input 框的选中样式
 * 事件的冒泡
+* [垂直居中](share/css-vetically.md)
+* checkbox 和 radio 的样式
+* position:sticky
 

@@ -34,11 +34,14 @@ var getRow = function(id) {
 	var clone = $(id).clone().appendTo('body');
 
 	// clear some style
+	// ...
 	
 	// get line-height
 	var style = window.getComputedStyle(clone[0], null);
 	var fontSize = style.fontSize;
 	var lineHeight = style.lineHeight === "normal" ? fontSize : style.lineHeight;
+	
+	// todo...
 };
 ```
 
@@ -58,8 +61,10 @@ var getRow = function(id) {
 	var clone = $(id).clone().appendTo('body');
 
 	// clear some style
+	// ...
 	
 	// get line-height
+	// ...
 
 	//get row count
 	var height = style.height;

@@ -8,6 +8,7 @@
 * 清除 DOM 的高度限制；
 * 获取 DOM 的行高和高度；
 * 计算行数；
+* 去除克隆的 DOM。
 
 ### 清除文本在 DOM 内部高度的限制
 拷贝文本所在的 DOM，将 DOM 的`width`、`padding-right`、`padding-left`、`margin-right`、`margin-left`保持和原有 DOM 一致；清除文本的`height`、`padding-top`、`padding-bottom`、`margin-top`、`margin-bottom`样式，这样一来文本就处于一个没有高度限制的 DOM 中，而且高度不受`padding`和`margin`的影响，并且它的宽度和原有宽度保持一致。
@@ -75,6 +76,8 @@ var getRow = function(id) {
 	var height = style.height;
 	var row = pxToNumber(height) / pxToNumber(lineHeight);
 	
+	clone.remove();
+	
 	return row;
 };
 ```
@@ -109,6 +112,8 @@ var getRow = function(id) {
 	//get row count
 	var height = style.height;
 	var row = pxToNumber(height) / pxToNumber(lineHeight);
+	
+	clone.remove();
 	
 	return row;
 };

@@ -1,4 +1,5 @@
 .idea/
+demo/bower/bower_components/
 .sync/*
 
 .me_configs.data

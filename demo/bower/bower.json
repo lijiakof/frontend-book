@@ -1,0 +1,21 @@
+{
+  "name": "bower-demo",
+  "authors": [
+    "Jay <jay.li@baichanghui.com>"
+  ],
+  "description": "a demo of bower",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "bower"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

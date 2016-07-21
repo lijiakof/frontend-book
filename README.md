@@ -39,6 +39,7 @@
 * [如何制作 0.5 像素的细线](share/css-half-border.md)
 * [如何用 CSS 画三角形和箭头](share/css-triangle-arrow.md)
 * [如何制作 10px 或者更小像素的字体](share/css-fontsize-10px.md)
+* [如何计算文本的行数](share/js-calculate-font-row.md)
 
 ## 持续构建
 * [Grunt](share/grunt.md)
@@ -87,4 +88,5 @@
 * position:sticky
 * border-image
 * 如何加快 Mobile 端 click 事件
+* 布局
 

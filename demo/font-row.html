@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FONT ROW</title>
+	<meta name="viewport" content="minimal-ui,width=device-width,initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<script type="text/javascript" src="lib/zepto.js"></script>
+	<meta charset="UTF-8">
+	<script type="text/javascript">
+
+		window.onload = function(){
+
+			var pxToNumber = function(px) {
+			   var num = Number(px.replace("px", ""));
+
+			   return num;
+			};
+			var getRow = function(id) {
+				var clone = $(id).clone().appendTo('body');
+
+				// clear some style
+				clone.css({
+					"height":"auto",
+					"padding-top": 0,
+					"padding-bottom": 0,
+					"margin-top": 0,
+					"margin-bottom": 0,
+					"visibility": "hidden"
+				});
+				
+				// get line-height
+				var style = window.getComputedStyle(clone[0], null);
+				var fontSize = style.fontSize;
+				var lineHeight = style.lineHeight === "normal" ? fontSize : style.lineHeight;
+
+				//get row count
+				var height = style.height;
+				var row = pxToNumber(height) / pxToNumber(lineHeight);
+
+				console.log(row);
+				
+				return row;
+			};
+
+			getRow("#text1");
+		};
+	</script>
+</head>
+<body>
+	<div id="text1">
+		哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+	</div>
+</body>
+</html>

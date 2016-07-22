@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html onclick="console.log('click html')">
+<head>
+	<title>EVENT BUBBLE</title>
+	<meta name="viewport" content="minimal-ui,width=device-width,initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<meta charset="UTF-8">
+	<script type="text/javascript">
+		window.onclick = function(){
+			console.log('click window');
+		};
+		document.onclick = function(){
+			console.log('click document');
+		};
+	</script>
+</head>
+<body onclick="console.log('click body')">
+	<div onclick="console.log('click div')">
+		<button onclick="console.log('click button')">EVENT BUBBLE DEMO</button>
+	</div>
+	
+</body>
+</html>

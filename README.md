@@ -27,6 +27,7 @@
 * [原型 Prototype](share/js-prototype.md)
 * [函数的 debounce 和 throttle](share/debounce-throttle.md)
 * [事件的触发顺序](share/event-sequence.md)
+* [事件的冒泡](share/event-bubble.md)
 * [Promise 编程](share/js-promise.md)
 * [HTTP 通讯 7 个步骤](share/http.md)
 * [HTTP 缓存机制](share/http-cache.md)
@@ -83,10 +84,10 @@
 * Web Notification
 * 巧用 after 伪类
 * Mobile 端如何去除 input 框的选中样式
-* 事件的冒泡
 * checkbox 和 radio 的样式
 * position:sticky
 * border-image
 * 如何加快 Mobile 端 click 事件
 * 布局
+* 软件设计的七大原则
 

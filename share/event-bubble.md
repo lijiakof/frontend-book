@@ -12,7 +12,7 @@
 ## DOM 的事件流
 事件捕获优先发生而冒泡后发生，这样一来从捕获到冒泡形成了一组事件流。
 
-通过`addEventListener(event,fn,useCapture)`这个方法给 DOM 绑定事件时，前两个参数很容易理解一个是事件名称`event`，第二个是触发方法`fn`，其中第三个参数是一个 bool 值，用来设置绑定的方法是在事件捕获(true)时自行还是冒泡(false)时自行，一般我们会设置 false，这样比较安全。
+通过`addEventListener(event,fn,useCapture)`这个方法给 DOM 绑定事件时，前两个参数很容易理解一个是事件名称`event`，第二个是触发方法`fn`，其中第三个参数是一个 bool 值，用来设置绑定的方法是在事件捕获(true)时执行还是冒泡(false)时执行，一般我们会设置 false，这样比较安全。
 
 ![事件冒泡](../resources/images/event-bubble.png)
 

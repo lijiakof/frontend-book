@@ -61,7 +61,7 @@ function add(num1, num2) {
    return result;
 }
 
-add(0.1, 0.2);//0.3
+add(0.1, 0.2);//0.3
 ```
 
 

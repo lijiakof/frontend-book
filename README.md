@@ -42,6 +42,7 @@
 * [如何制作 10px 或者更小像素的字体](share/css-fontsize-10px.md)
 * [如何计算文本的行数](share/js-calculate-font-row.md)
 * [如何解决 JS 中数字计算的精度问题](share/js-number-accuracy.md)
+* [布局](share/html-layout.md)
 
 ## 持续构建
 * [Grunt](share/grunt.md)
@@ -89,7 +90,6 @@
 * position:sticky
 * border-image
 * 如何加快 Mobile 端 click 事件
-* 布局
 * 软件设计的七大原则
 * 如何制作 Chrome 扩展程序
 

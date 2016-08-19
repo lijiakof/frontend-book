@@ -42,6 +42,7 @@
 * [如何制作 10px 或者更小像素的字体](share/css-fontsize-10px.md)
 * [如何计算文本的行数](share/js-calculate-font-row.md)
 * [如何解决 JS 中数字计算的精度问题](share/js-number-accuracy.md)
+* [如何开启 Angular 单页应用的 H5 路由模式](share/angular-h5mode.md)
 * [布局](share/html-layout.md)
 
 ## 持续构建

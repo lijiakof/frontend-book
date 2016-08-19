@@ -17,6 +17,16 @@ app.config(["$locationProvider", function($locationProvider){
 }]);
 ```
 
+### 在页面中增加 base url
+
+```
+<html>
+	<head>
+		<base href="/" />
+	</head>
+</html>
+```
+
 ### 将 Angular 应用中的所有内部跳转改为 Angular 封装好的跳转：
 
 * 页面上的链接跳转采用 `ng-ref`；

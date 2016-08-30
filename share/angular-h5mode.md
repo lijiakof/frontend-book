@@ -40,6 +40,7 @@ location / {
 	root   /path;
 	index  index.html index.htm;
 	
+	# 注意，‘ =404’ 前面必须有空格！
 	try_files $uri $uri/ /index.html =404;
 }
 ```

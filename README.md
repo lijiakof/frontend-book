@@ -23,6 +23,7 @@
 * [如何解决 Ajax 的跨域问题](share/cross-domain.md)
 * [Html5 新特性之 Websocket](share/html5-websocket.md)
 * [Nodejs](share/nodejs.md)
+* [浏览器的缓存](share/browser-cache.md)
 
 ## 高级
 * [原型 Prototype](share/js-prototype.md)

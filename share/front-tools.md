@@ -31,6 +31,11 @@ http://www.sublimetext.com/
 ### 资料
 * https://segmentfault.com/a/1190000000505218
 
+## Visual Studio Code
+这个版本的 vs 一改微软的作风，变得开源、轻量、插件。强烈推荐！
+### 安装
+https://www.visualstudio.com/downloads/
+
 ## Atom
 ### 安装
 https://atom.io/

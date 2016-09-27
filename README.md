@@ -9,6 +9,7 @@
 * [SASS](share/sass.md)
 * [你所不知道的 JavaScript](share/javascript.md)
 * [ES6 vs ES5](share/es6vs5.md)
+* [TypeScript](https://github.com/lijiakof/typescript)
 * [认识 Markdown](share/markdown.md)
 
 ## 进阶
@@ -55,6 +56,7 @@
 
 ## 架构框架
 * [Angular 2 vs Angular 1.x](share/angular2vs1.md)
+* [Angular 2 Quickstart](https://github.com/lijiakof/ng2-quickstart)
 * [Web 系统架构](share/web-architecture.md)
 
 ## 软件工程

@@ -57,6 +57,7 @@
 ## 架构框架
 * [Angular 2 vs Angular 1.x](share/angular2vs1.md)
 * [Angular 2 Quickstart](https://github.com/lijiakof/ng2-quickstart)
+* [Angular 2 入门指南](https://github.com/lijiakof/ng2-tutorial)
 * [Web 系统架构](share/web-architecture.md)
 
 ## 软件工程

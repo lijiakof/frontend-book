@@ -53,6 +53,7 @@
 * [Grunt](share/grunt.md)
 * [Gulp](share/gulp.md)
 * [Bower](share/bower.md)
+* [Webpack](share/webpack.md)
 
 ## 架构框架
 * [Angular 2 vs Angular 1.x](share/angular2vs1.md)
@@ -74,7 +75,6 @@
 * [如何打造属于自己的框架](share/framework.md)
 * [传说中的九种算法](share/algorithm.md)
 * React
-* Webpack
 * UML
 * [UML 之协作图](share/uml-collaboration.md)
 * transition 与 visibility

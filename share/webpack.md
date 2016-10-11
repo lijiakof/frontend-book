@@ -39,7 +39,7 @@ $ npm install webpack --save-dev
 ### 创建入口页面和入口程序：
 
 ```
-<!-- index.html -->
+<!-- src/index.html -->
 <!DOCTYPE html>
 <html>
 
@@ -56,7 +56,7 @@ $ npm install webpack --save-dev
 ```
 
 ```
-<!-- app.js -->
+<!-- src/app.js -->
 document.write('It works.');
 ```
 
@@ -73,12 +73,12 @@ $ webpack src/app.js dist/bundle.app.js
 
 
 ```
-<!-- module.js -->
+<!-- src/module.js -->
 module.exports = 'It works from module.js';
 ```
 
 ```
-<!-- app.js -->
+<!-- src/app.js -->
 var module = require('./module.js');
 
 document.write('It works.');
@@ -101,14 +101,14 @@ $ npm install css-loader style-loader --save-dev
 ### 创建 CSS 文件
 
 ```
-/* style.css */
+/* src/style.css */
 body { color: red; }
 ```
 
 ### 在程序中引入
 
 ```
-<!-- app.js -->
+<!-- src/app.js -->
 var module = require('./module.js');
 require("./style.css") // 引入 style.css
 
@@ -129,9 +129,9 @@ $ webpack src/app.js dist/bundle.app.js --module-bind 'css=style!css'
 ```
 var webpack = require('webpack');
 module.exports = {
-    entry: './app.js',
+    entry: './src/app.js',
     output: {
-        path: __dirname,
+        path: './dist',
         filename: 'bundle.app.js'
     },
     module: {
@@ -177,7 +177,7 @@ module.exports = {
 }
 ```
 
-修改 `index.html` 去除中间的 js 的引用：
+修改 `src/index.html` 去除中间的 js 的引用：
 
 ```
 <!DOCTYPE html>

@@ -54,6 +54,7 @@
 * [Gulp](share/gulp.md)
 * [Bower](share/bower.md)
 * [Webpack](share/webpack.md)
+* [Npm](share/npm.md)
 
 ## 架构框架
 * [Angular 2 vs Angular 1.x](share/angular2vs1.md)

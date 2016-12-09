@@ -36,7 +36,7 @@ obj.fn();
 ```
 var obj = {
 	a: 0,
-	whatIsThis: function(){
+	whatIsThis:() => {
 		console.log(this);
 	}
 };
@@ -58,6 +58,14 @@ var obj = new Class();
 
 ## 总结
 上面所说的可能很晕，记住这一点：用对象调用的方法中使用的`this`会指向该对象；直接调用的函数中使用的`this`会指向全局对象。
+
+## `this` 是否可以被完全修改（或者把一个对象全部赋值给它）？
+昨天面试的时候，突然有一个自称初学者的应聘同学问了一个问题，`this`是否能给它赋上另外一个对象呢？我当时就傻了，在实际操作中很少去做这件事情，将方法内部的`this`增加一个属性倒是没有太大问题，如果试图全部修改它，这种事情恐怕很少做这种操作。当然我当时的回答是：“好像有点矛盾，很可能 this 本身是有一些属性是只读的”。
+
+于是我回来做了一个实验，将各种情况的 `this` 都赋上另外一个对象，结果是：*Uncaught ReferenceError: Invalid left-hand side in assignment* 。看起来的确是不行的，细想一下也是能够理解的：
+
+* 如果自己能够将自己变成一个其它的对象，但是另外那个对象又没有修改自己的能力，这岂不是自相矛盾；
+* 如果另外一个对象的确能修改自己，这样一来岂不是进入了无限被修改的循环中。
 
 ## 参考
 * [Understanding JavaScript Function Invocation and "this"](http://yehudakatz.com/2011/08/11/understanding-javascript-function-invocation-and-this/)

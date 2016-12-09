@@ -36,7 +36,7 @@ obj.fn();
 ```
 var obj = {
 	a: 0,
-	whatIsThis:() => {
+	whatIsThis: function(){
 		console.log(this);
 	}
 };
@@ -55,6 +55,24 @@ var obj = new Class();
 ```
 
 ## 使用 call 和 apply 调用
+
+## 箭头函数中的 `this`
+在 ES6 语法中 `()=>this` 箭头函数中的 `this` 就很特殊了，箭头函数没有一个自己的 `this`，但当你在内部使用了 `this`，常规的局部作用域准则就起作用了，它会指向最近一层作用域内的 `this`。
+
+```
+var obj = {
+	a: 0,
+	whatIsThis: function() {
+		console.log(this);
+		
+		var fn = () => console.log(this);
+		
+	}
+};
+obj.whatIsThis();
+```
+
+两个都会打印出当前`Object`对象
 
 ## 总结
 上面所说的可能很晕，记住这一点：用对象调用的方法中使用的`this`会指向该对象；直接调用的函数中使用的`this`会指向全局对象。

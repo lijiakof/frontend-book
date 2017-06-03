@@ -52,11 +52,16 @@ var klass = function() {
 var obj = new klass();
 
 console.log(obj.__proto__ === klass.prototype);
+console.log(klass.prototype.__proto__ === Object.prototype);
+console.log(Object.prototype.__proto__ === null);
+
 console.log(klass.constructor.__proto__ === Function.prototype);
 console.log(Function.prototype.__proto__ === Object.prototype);
-console.log(Object.prototype === null);
+console.log(Object.prototype.__proto__ === null);
 
 //> Console:
+//> true
+//> true
 //> true
 //> true
 //> true

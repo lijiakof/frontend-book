@@ -55,6 +55,7 @@
 * [Bower](share/bower.md)
 * [Webpack](share/webpack.md)
 * [Npm](share/npm.md)
+* [PM2](share/pm2.md)
 
 ## 架构框架
 * [Angular 2 vs Angular 1.x](share/angular2vs1.md)
@@ -64,6 +65,7 @@
 * [Vuex 入门指南](https://github.com/lijiakof/vuex-tutorial)
 * [Vuejs Server Side Render](https://github.com/lijiakof/vue-just-ssr)
 * [Web 系统架构](share/web-architecture.md)
+* [MVVM 简单实现](share/mvvm.md)
 
 ## 软件工程
 * [认识流程图](share/flow-chart.md)
@@ -105,4 +107,6 @@
 * 如何制作 Chrome 扩展程序
 * Foreverjs
 * zone.js
+* 浏览器亚像素渲染与小数位的取舍
+* 如何绘制高清图标
 

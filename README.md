@@ -65,7 +65,7 @@
 * [Vuex 入门指南](https://github.com/lijiakof/vuex-tutorial)
 * [Vuejs Server Side Render](https://github.com/lijiakof/vue-just-ssr)
 * [Web 系统架构](share/web-architecture.md)
-* [MVVM 简单实现](share/mvvm.md)
+* [MVVM 的实现](share/mvvm.md)
 
 ## 软件工程
 * [认识流程图](share/flow-chart.md)

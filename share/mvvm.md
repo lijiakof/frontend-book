@@ -49,6 +49,7 @@ console.log(new Date().getTime() - st);
 
 ## MVVM 的实现
 ### 原理
+![mvvm](../resources/images/js-mvvm.png)
 
 ### Observer
 

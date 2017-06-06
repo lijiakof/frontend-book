@@ -99,7 +99,14 @@ console.log(new Date().getTime() - st);
 ### 原理
 ![mvvm](../resources/images/js-mvvm.png)
 
+这个 MVVM 的实现，是通过 Observer、Dep、Watcher、Complie 四个组件组成，它们相互关联，相互影响，最终形成了数据的双向绑定功能：
+
+* 通过 Observer 来监听 data 的数据变化，并且提供了订阅某个数据变化的能力；
+* 通过 Complie 来编辑 HTML 模版成 Document Fragment，然后解析其中的特殊标记（绑定的数据）；
+* 最后通过 Watcher 将
+
 ### Observer
+Observer 模块会自动的将 data 中的所有属性增加 getter 和 setter，让其具备监听对象属性变化的能力：
 
 ```
 function observe(obj, vm) {
@@ -132,6 +139,7 @@ function defineReactive(obj, key, val) {
 ```
 
 ### Dep
+Dep 和 Watcher 是简单的观察者模式的实现，Dep 相当于一个订阅者，它会管理所有的观察者，并且有给观察者发送消息的能力：
 
 ```
 function Dep () {
@@ -151,6 +159,7 @@ Dep.prototype = {
 ```
 
 ### Watcher
+Watcher 相当于一个观察者，当接收到订阅者的消息后，观察者会做出自己的更新操作：
 
 ```
 function Watcher(vm, node, name, nodeType) {
@@ -180,6 +189,7 @@ Watcher.prototype = {
 ```
 
 ### Complie
+Complie 具备将 HTML 模版解析成 Document Fragment 的能力，并且会创建响应的 Watcher，让视图中绑定的数据产生变化：
 
 ```
 function nodeToFragment(node, vm) {
@@ -227,6 +237,7 @@ function compile(node, vm) {
 ```
 
 ### MVVM 构造函数
+当 MVVM 对象初始化的时候会做两件事情：监听 data 所有属性的变化；解析 HTML 模版：
 
 ```
 function MVVM(options) {

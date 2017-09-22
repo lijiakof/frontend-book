@@ -5,7 +5,7 @@
 由于 HTML 是基于 HTTP 协议传输的，当然浏览器需要去实现这些缓存：
 
 * Expires
-* Cache-Control
+* Cache-Control（max-age）
 * Last-modified
 * ETag
 

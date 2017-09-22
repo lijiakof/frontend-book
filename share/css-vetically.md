@@ -47,8 +47,9 @@
 
 #child {
 	height: 20px;
-	position: absolute;
 	margin-top: -10px;
+	position: absolute;
+	top: 50%;
 }
 ```
 

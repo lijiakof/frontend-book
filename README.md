@@ -67,6 +67,7 @@
 * [Web 系统架构](share/web-architecture.md)
 * [MVVM 的实现](share/mvvm.md)
 * [百场汇 Web 前端](http://reecho.baichanghui.com/article/1)
+* [初识 Nodejs 原理](share/nodejs-how-it-works.md)
 
 ## 软件工程
 * [认识流程图](share/flow-chart.md)

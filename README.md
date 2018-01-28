@@ -53,7 +53,7 @@
 * [Grunt](share/grunt.md)
 * [Gulp](share/gulp.md)
 * [Bower](share/bower.md)
-* [Webpack]()
+* [Webpack](https://github.com/lijiakof/webpack-tutorial)
 * [Npm](share/npm.md)
 * [PM2](share/pm2.md)
 

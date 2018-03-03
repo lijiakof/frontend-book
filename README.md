@@ -69,6 +69,7 @@
 * [百场汇 Web 前端](http://reecho.baichanghui.com/article/1)
 * [初识 Nodejs 原理](share/nodejs-how-it-works.md)
 * [区块链技术（Blockchain）](https://github.com/lijiakof/blockchain)
+* [Nuxt.js 入门指南](https://github.com/lijiakof/nuxt-tutorial)
 
 ## 软件工程
 * [认识流程图](share/flow-chart.md)
@@ -77,6 +78,7 @@
 * [初识 Scrum 敏捷](share/agile-scrum.md)
 
 ## TODO
+* Async / Await
 * [Yeoman](share/yeoman.md)
 * [浏览器工作原理](share/browser-work.md)
 * [Viewport](share/html-meta-viewport.md)

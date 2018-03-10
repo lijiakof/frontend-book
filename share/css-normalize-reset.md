@@ -1,5 +1,5 @@
 # Normalize.css vs Reset.css
-Normalize.css 相比于传统的 CSS reset 来说，它是一种现代的、为HTML5准备的优质替代方。它使浏览器更佳一致的呈现所有元素，并且符合现代标准，它只针对那些需要规范化的样式。它非常非常的轻量级，以至于源代码也只有 6KB 左右。现在已经被用于Twitter Bootstrap、HTML5 Boilerplate、GOV.UK、Rdio、CSS Tricks 以及许许多多其他框架、工具和网站上。
+Normalize.css 相比于传统的 CSS reset 来说，它是一种现代的、为HTML5准备的优质替代方案。它使浏览器更佳一致的呈现所有元素，并且符合现代标准，它只针对那些需要规范化的样式。它非常非常的轻量级，以至于源代码也只有 6KB 左右。现在已经被用于Twitter Bootstrap、HTML5 Boilerplate、GOV.UK、Rdio、CSS Tricks 以及许许多多其他框架、工具和网站上。
 
 ## 概述
 Normalize.css 是一个 CSS resets 代替方案。经过 [@necolas](https://twitter.com/necolas) 和 [@jon neal](https://twitter.com/jon_neal) 花了几百个小时来努力研究不同浏览器的默认样式的差异，这个项目终于变成了现在这样。
@@ -22,7 +22,7 @@ Normalize.css 的目标：
 ### Normalize.css 保护有用的默认值
 Resets 几乎将所有元素的默认样式重新设置，强行将默认样式设置了同样的视觉效果。相比于 Normalize.css，它保留了浏览器的许多默认样式。这意味着你不必为所有常见的排版元素重新声明样式。
 
-当 HTML 元素在不同的浏览器中有不同的默认样式时，Normalize.css 的目的在于让这些样式更佳的一致斌符合现代浏览器的标准。
+当 HTML 元素在不同的浏览器中有不同的默认样式时，Normalize.css 的目的在于让这些样式更佳的一致并符合现代浏览器的标准。
 
 ### Normalize.css 修复了浏览器的 Bug
 它解决了桌面和移动端浏览器的常见 bug，当然这些 bug 超出了 Resets 的范围。这些 bug 包括 HTML5 元素的显示设置、预格式化文本的字体大小、IE9 中 SVG 的溢出以及浏览器和操作系统中众多表单相关的 bug。

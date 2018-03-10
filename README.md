@@ -79,7 +79,6 @@
 * [初识 Scrum 敏捷](share/agile-scrum.md)
 
 ## TODO
-* Normalize.css vs Reset.css
 * Async / Await
 * [Yeoman](share/yeoman.md)
 * [浏览器工作原理](share/browser-work.md)

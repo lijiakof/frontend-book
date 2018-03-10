@@ -48,7 +48,6 @@
 * [如何开启 Angular 单页应用的 H5 路由模式](share/angular-h5mode.md)
 * [如何在 AWS 中安装 Nodejs](share/aws-install-node.md)
 * [如何布局](share/html-layout.md)
-* [Normalize.css vs Reset.css](share/css-normalize-reset.md)
 
 ## 持续构建
 * [Grunt](share/grunt.md)
@@ -59,6 +58,7 @@
 * [PM2](share/pm2.md)
 
 ## 架构框架
+* [Normalize.css vs Reset.css](share/css-normalize-reset.md)
 * [Angular 2 vs Angular 1.x](share/angular2vs1.md)
 * [Angular 2 Quickstart](https://github.com/lijiakof/ng2-quickstart)
 * [Angular 2 入门指南](https://github.com/lijiakof/ng2-tutorial)

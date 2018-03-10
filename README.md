@@ -48,6 +48,7 @@
 * [如何开启 Angular 单页应用的 H5 路由模式](share/angular-h5mode.md)
 * [如何在 AWS 中安装 Nodejs](share/aws-install-node.md)
 * [如何布局](share/html-layout.md)
+* [Normalize.css vs Reset.css](share/css-normalize-reset.md)
 
 ## 持续构建
 * [Grunt](share/grunt.md)
@@ -78,6 +79,7 @@
 * [初识 Scrum 敏捷](share/agile-scrum.md)
 
 ## TODO
+* Normalize.css vs Reset.css
 * Async / Await
 * [Yeoman](share/yeoman.md)
 * [浏览器工作原理](share/browser-work.md)
@@ -115,4 +117,3 @@
 * 浏览器亚像素渲染与小数位的取舍
 * 如何绘制高清图标
 * d3.js
-

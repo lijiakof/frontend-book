@@ -77,3 +77,6 @@ yarn install
 
 ## 如何从 npm 迁移到 Yarn
 大家不要担心迁移，从 npm 迁移到 Yarn 是一件非常简单的事情，Yarn 和 npm 使用同样的 package.json 文件，现在只需要运行 `yarn` Yarn 将通过自己的解析算法来重新组织 `node_modules` 目录，这个算法和 node.js 模块解析算法是兼容的。
+
+## 参考
+* https://www.sitepoint.com/yarn-vs-npm/

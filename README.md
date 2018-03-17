@@ -1,4 +1,4 @@
-# 《Web 前端》
+# 《前端技术》
 ## 基础
 * [前端工具](share/front-tools.md)
 * [认识 HTML](share/html.md)
@@ -32,6 +32,7 @@
 * [事件的触发顺序](share/event-sequence.md)
 * [事件的冒泡](share/event-bubble.md)
 * [Promise 编程](share/js-promise.md)
+* [Async / Await](share/js-asyncawait.md)
 * [HTTP 通讯 7 个步骤](share/http.md)
 * [HTTP 缓存机制](share/http-cache.md)
 * [YSlow团队提出的“23条 Web 性能最佳实践和规则”](share/yslow.md)
@@ -79,7 +80,6 @@
 * [初识 Scrum 敏捷](share/agile-scrum.md)
 
 ## TODO
-* Async / Await
 * [Yeoman](share/yeoman.md)
 * [浏览器工作原理](share/browser-work.md)
 * [Viewport](share/html-meta-viewport.md)
@@ -116,3 +116,4 @@
 * 浏览器亚像素渲染与小数位的取舍
 * 如何绘制高清图标
 * d3.js
+* 在桌面端和移动端用CSS开启硬件加速 http://blog.teamtreehouse.com/increase-your-sites-performance-with-hardware-accelerated-css

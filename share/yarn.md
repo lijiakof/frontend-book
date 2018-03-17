@@ -1,5 +1,5 @@
 # Yarn
-Yarn 是 Facebook、Google、Exponent 和 Tilde 开发的一款新的 JavaScript 包管理工具。它相比与 npm 更佳的高效、安全和可靠。
+Yarn 发布于2016年10月，是 Facebook、Google、Exponent 和 Tilde 开发的一款新的 JavaScript 包管理工具。它相比与 npm 更佳的高效、安全和可靠。在 Github 上迅速拥有了2.4万个 Star，而 npm 只有1.2万个 Star。
 
 ## Yarn 的优势
 * 高效：Yarn 缓存了每个下载过的包，所以再次使用时无需重复下载。 同时利用并行下载以最大化资源利用率，因此安装速度更快。

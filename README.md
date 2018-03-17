@@ -56,8 +56,8 @@
 * [Bower](share/bower.md)
 * [Webpack](https://github.com/lijiakof/webpack-tutorial)
 * [Npm](share/npm.md)
-* [PM2](share/pm2.md)
 * [Yarn](share/yarn.md)
+* [PM2](share/pm2.md)
 
 ## 架构框架
 * [Normalize.css vs Reset.css](share/css-normalize-reset.md)

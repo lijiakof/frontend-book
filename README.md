@@ -53,8 +53,8 @@
 ## 持续构建
 * [Grunt](share/grunt.md)
 * [Gulp](share/gulp.md)
-* [Bower](share/bower.md)
 * [Webpack](https://github.com/lijiakof/webpack-tutorial)
+* [Bower](share/bower.md)
 * [Npm](share/npm.md)
 * [Yarn](share/yarn.md)
 * [PM2](share/pm2.md)

@@ -81,6 +81,9 @@
 * [初识 Scrum 敏捷](share/agile-scrum.md)
 
 ## TODO
+* 在桌面端和移动端用CSS开启硬件加速 http://blog.teamtreehouse.com/increase-your-sites-performance-with-hardware-accelerated-css
+* 巧用 after 伪类
+* pure
 * [Yeoman](share/yeoman.md)
 * [浏览器工作原理](share/browser-work.md)
 * [Viewport](share/html-meta-viewport.md)
@@ -104,7 +107,6 @@
 * Glob 语法
 * MVC&MVP&MVVM
 * Web Notification
-* 巧用 after 伪类
 * Mobile 端如何去除 input 框的选中样式
 * checkbox 和 radio 的样式
 * position:sticky
@@ -117,4 +119,3 @@
 * 浏览器亚像素渲染与小数位的取舍
 * 如何绘制高清图标
 * d3.js
-* 在桌面端和移动端用CSS开启硬件加速 http://blog.teamtreehouse.com/increase-your-sites-performance-with-hardware-accelerated-css

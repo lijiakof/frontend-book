@@ -49,6 +49,7 @@
 * [如何开启 Angular 单页应用的 H5 路由模式](share/angular-h5mode.md)
 * [如何在 AWS 中安装 Nodejs](share/aws-install-node.md)
 * [如何布局](share/html-layout.md)
+* [巧用 `::before` `::after` 伪类](share/css-before-after.md)
 
 ## 持续构建
 * [Grunt](share/grunt.md)
@@ -82,8 +83,9 @@
 
 ## TODO
 * 在桌面端和移动端用CSS开启硬件加速 http://blog.teamtreehouse.com/increase-your-sites-performance-with-hardware-accelerated-css
-* 巧用 after 伪类
 * pure
+* [Rollup](share/rollup.md)
+* [Karma & Jasmine](share/karma-jasmine.md)
 * [Yeoman](share/yeoman.md)
 * [浏览器工作原理](share/browser-work.md)
 * [Viewport](share/html-meta-viewport.md)
@@ -119,3 +121,4 @@
 * 浏览器亚像素渲染与小数位的取舍
 * 如何绘制高清图标
 * d3.js
+* parceljs

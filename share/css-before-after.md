@@ -37,7 +37,7 @@
     content: ""
     position: absolute;
     left: 0;
-    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
 }
 ```
 
@@ -83,4 +83,4 @@
 ```
 
 ## 总结
-利用 `::before` `::after` 伪类，动态的在元素开始和末尾增加标签这一特性，我们可以做出很多丰富的样式但是有减少了 DOM 的复杂度，当然它还有更多更丰富的用法等待着我们来挖掘。
+利用 `::before` `::after` 伪类，动态的在元素开始和末尾增加标签这一特性，我们可以做出很多丰富的样式而且又减少了 DOM 的复杂度，当然它还有更多更丰富的用法等待着我们来挖掘。

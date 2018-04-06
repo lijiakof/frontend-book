@@ -25,6 +25,7 @@
 * [Html5 新特性之 Websocket](share/html5-websocket.md)
 * [Nodejs](share/nodejs.md)
 * [浏览器的缓存](share/browser-cache.md)
+* [响应式网站实战](share/responsive-web-design.md)
 
 ## 高级
 * [原型 Prototype](share/js-prototype.md)
@@ -83,6 +84,7 @@
 
 ## TODO
 * 在桌面端和移动端用CSS开启硬件加速 http://blog.teamtreehouse.com/increase-your-sites-performance-with-hardware-accelerated-css
+* 响应式设计 9 大原则 http://blog.froont.com/9-basic-principles-of-responsive-web-design/
 * pure
 * [Rollup](share/rollup.md)
 * [Karma & Jasmine](share/karma-jasmine.md)

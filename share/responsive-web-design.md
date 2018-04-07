@@ -19,7 +19,7 @@
 | 桌面 | ≥ 1024px |  | 
 | 大桌面 | ≥ 1280px |  |
 
-* 参考：https://material.io/devices/ *
+**参考：https://material.io/devices/**
 
 这样一来，我们可以通过在不同的尺寸下设置不同的样式来达到响应式的效果，但是这种变化是需要有一定的规则的，不然在管理和维护上是灾难。
 
@@ -157,7 +157,7 @@ UI 必须在栅格系统中设计并符合栅格系统的规则，整体布局�
 * 网页字体 vs 系统字体
 * 位图 vs 矢量图
 
-* 参考：http://blog.froont.com/9-basic-principles-of-responsive-web-design/ *
+**参考：http://blog.froont.com/9-basic-principles-of-responsive-web-design/**
 
 ## 总结
 响应式设计并不是一件非常困难的事情，需要我们定义好规则，让开发和设计都遵循这一规则，化繁为简，让开发更佳高效。

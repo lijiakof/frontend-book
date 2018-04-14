@@ -61,15 +61,15 @@ import to from './to.js';
 async function asyncFunc() {
     let err, product, saveProduct;
 
-    [err, product] = await Api.product({ id : 10 });
+    [err, product] = await to(Api.product({ id : 10 }));
     if(!product) {
         console.log('No product found');
     }
 
-    [err, saveProduct] = await Api.save({
+    [err, saveProduct] = await to(Api.save({
         id: product.id,
         name: product.name
-    });
+    }));
 
     if(err) {
         console.log(err);

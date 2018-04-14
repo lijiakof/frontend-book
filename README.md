@@ -85,6 +85,7 @@
 
 ## TODO
 * 在桌面端和移动端用CSS开启硬件加速 http://blog.teamtreehouse.com/increase-your-sites-performance-with-hardware-accelerated-css
+* Babel
 * 响应式设计 9 大原则 http://blog.froont.com/9-basic-principles-of-responsive-web-design/
 * pure
 * [Rollup](share/rollup.md)

@@ -52,6 +52,7 @@
 * [如何在 AWS 中安装 Nodejs](share/aws-install-node.md)
 * [如何布局](share/html-layout.md)
 * [巧用 `::before` `::after` 伪类](share/css-before-after.md)
+* [开启 CSS 硬件加速，提高网站性能](share/css-hardware-accelerated.md)
 
 ## 持续构建
 * [Grunt](share/grunt.md)
@@ -84,7 +85,6 @@
 * [初识 Scrum 敏捷](share/agile-scrum.md)
 
 ## TODO
-* 在桌面端和移动端用CSS开启硬件加速 http://blog.teamtreehouse.com/increase-your-sites-performance-with-hardware-accelerated-css
 * Babel
 * 响应式设计 9 大原则 http://blog.froont.com/9-basic-principles-of-responsive-web-design/
 * pure
@@ -126,3 +126,4 @@
 * 如何绘制高清图标
 * d3.js
 * parceljs
+* loopback

@@ -87,6 +87,8 @@
 * [初识 Scrum 敏捷](share/agile-scrum.md)
 
 ## TODO
+* 屏幕上的“设计学”
+* [认识 Git](share/git.md)
 * [Babel](share/babel.md)
 * 响应式设计 9 大原则 http://blog.froont.com/9-basic-principles-of-responsive-web-design/
 * pure
@@ -95,7 +97,6 @@
 * [Yeoman](share/yeoman.md)
 * [浏览器工作原理](share/browser-work.md)
 * [Viewport](share/html-meta-viewport.md)
-* [认识 Git](share/git.md)
 * [如何打造属于自己的框架](share/framework.md)
 * [传说中的九种算法](share/algorithm.md)
 * React

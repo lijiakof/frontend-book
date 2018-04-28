@@ -26,6 +26,7 @@
 * [Nodejs](share/nodejs.md)
 * [浏览器的缓存](share/browser-cache.md)
 * [响应式网站实战](share/responsive-web-design.md)
+* [你所不知道的 JavaScript II](share/amazing-javascript.md)
 
 ## 高级
 * [原型 Prototype](share/js-prototype.md)
@@ -85,7 +86,7 @@
 * [初识 Scrum 敏捷](share/agile-scrum.md)
 
 ## TODO
-* Babel
+* [Babel](share/babel.md)
 * 响应式设计 9 大原则 http://blog.froont.com/9-basic-principles-of-responsive-web-design/
 * pure
 * [Rollup](share/rollup.md)

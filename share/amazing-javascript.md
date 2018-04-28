@@ -12,7 +12,7 @@ JavaScript 这种弱类型的语言，入门很简单，但是想玩转它需要
 * 类型不同：JavaScript 是弱类型的；Java 是强类型的；
 * 对象不同：JavaScript 的面相对象是基于原型的；Java 是基于类的；
 
-![JavaScript vs Java](resources/javascript-vs-java.png)
+![JavaScript vs Java](../resources/images/javascript-vs-java.png)
 
 *JavaScript 和 Java 的关系好比仓鼠和火腿的关系*
 
@@ -386,7 +386,7 @@ console.log(Object.prototype.__proto__ === null);
 //> true
 ```
 
-![JavaScript Prototype](resources/javascript-prototype.png)
+![JavaScript Prototype](../resources/images/javascript-prototype.png)
 
 ```
 Object.__proto__ === Function.__proto__

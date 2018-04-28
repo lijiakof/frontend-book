@@ -26,7 +26,6 @@
 * [Nodejs](share/nodejs.md)
 * [浏览器的缓存](share/browser-cache.md)
 * [响应式网站实战](share/responsive-web-design.md)
-* [你所不知道的 JavaScript II](share/amazing-javascript.md)
 
 ## 高级
 * [原型 Prototype](share/js-prototype.md)
@@ -36,6 +35,7 @@
 * [Promise 编程](share/js-promise.md)
 * [Async/Await](share/js-asyncawait.md)
 * [如何优雅的处理 async/await 异常](share/js-asyncawait-catch-error.md)
+* [你所不知道的 JavaScript II](share/amazing-javascript.md)
 * [HTTP 通讯 7 个步骤](share/http.md)
 * [HTTP 缓存机制](share/http-cache.md)
 * [YSlow团队提出的“23条 Web 性能最佳实践和规则”](share/yslow.md)
@@ -88,6 +88,7 @@
 
 ## TODO
 * 屏幕上的“设计学”
+* [贝塞尔曲线](share/bezier.md)
 * [认识 Git](share/git.md)
 * [Babel](share/babel.md)
 * 响应式设计 9 大原则 http://blog.froont.com/9-basic-principles-of-responsive-web-design/
@@ -108,7 +109,6 @@
 * Canvas
 * WebWorks
 * JavaScript |、||、&、&&
-* [贝塞尔曲线](share/bezier.md)
 * 离线缓存
 * AMD vs CMD
 * Systemjs

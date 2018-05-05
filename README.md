@@ -79,6 +79,7 @@
 * [初识 Nodejs 原理](share/nodejs-how-it-works.md)
 * [区块链技术（Blockchain）](https://github.com/lijiakof/blockchain)
 * [Nuxt.js 入门指南](https://github.com/lijiakof/nuxt-tutorial)
+* [React Native](share/react-native.md)
 
 ## 软件工程
 * [认识流程图](share/flow-chart.md)

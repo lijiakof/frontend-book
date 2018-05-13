@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SLEEP</title>
+    <meta name="viewport" content="minimal-ui,width=device-width,initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+        // function sleep(d) {
+        //     var t = Date.now();
+        //     while (Date.now() - t <= d);
+        // }
+
+        // console.log('sleep');
+
+        // sleep(10000);
+
+        // console.log('run');
+        
+        // function sleep(ms) {
+        //     return new Promise(resolve => setTimeout(resolve, ms));
+        // }
+
+        // async function test() {
+        //     console.log('Taking a break...');
+        //     await sleep(2000);
+        //     console.log('Two second later');
+        // }
+
+        // test();
+        // function* genNumbers(n) {
+        //     for (let i = 1; i <= n; i++) {
+        //         yield i;
+        //     }
+        //     return 'ok';
+        // }
+        // const gen = genNumbers(10);
+        // function next() {
+        //     // 执行next()方法取下一个数字
+        //     const ret = gen.next();
+        //     // 打印结果
+        //     console.log(ret);
+        //     if (ret.done) {
+        //         // 如果done=true则表示生成器执行结束
+        //         console.log('done');
+        //     } else {
+        //         // 500ms后继续执行
+        //         setTimeout(next, 500);
+        //     }
+        // }
+        // next();
+
+        function sleep(time) {
+            setTimeout(function () {
+                test.next();
+            }, time);
+        }
+
+        function* gen() {
+            console.log('sleep');
+            yield sleep(10000);
+            console.log('10 second later');
+        }
+
+        var test = gen();
+        test.next();
+    </script>
+</head>
+
+<body>
+    
+</body>
+
+</html>

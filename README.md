@@ -53,6 +53,7 @@
 * [如何开启 Angular 单页应用的 H5 路由模式](share/angular-h5mode.md)
 * [如何在 AWS 中安装 Nodejs](share/aws-install-node.md)
 * [如何布局](share/html-layout.md)
+* [如何阻断运行中的 JavaScript](share/js-blocking.md)
 * [巧用 `::before` `::after` 伪类](share/css-before-after.md)
 * [开启 CSS 硬件加速，提高网站性能](share/css-hardware-accelerated.md)
 
@@ -89,6 +90,7 @@
 
 ## TODO
 * 屏幕上的“设计学”
+* Javascript 迭代器
 * [贝塞尔曲线](share/bezier.md)
 * [认识 Git](share/git.md)
 * [Babel](share/babel.md)

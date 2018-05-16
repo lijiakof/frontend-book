@@ -26,8 +26,18 @@
 但是，非对称加密的缺点是加密和解密花费时间长、速度慢，只适合对少量数据进行加密。
 
 ## 签名
+为了能让接收方得知信息的发送方是谁，数字签名技术运用而生。
+
+数字签名是一种以电子形式存在于数据信息之中的，或作为其附件或逻辑上有联系的数据，可用于辨别数据签署人的身份，并表名签署人对数据信息中包含的信息的认可技术。
+
+* 签名过程：
+* 验签过程：
+
+## 证书
+TODO：
 
 ## 加密算法
+加密算法有很多种：RSA、RC2、RC4、IDEA、RSA、DSA、ADS、MD5、PKCS、ECC 等等
 
 ## 钱包需要什么功能？
 钱包的核心功能：
@@ -288,7 +298,6 @@ var tx = new EthereumTx(txParams);
 tx.sign(privateKey);
 
 var serializedTx = tx.serialize(); // 这是最终交易需要发送的数据
-
 ```
 
 ## 发送交易
@@ -322,8 +331,6 @@ web3.eth.sendRawTransaction(serializedTx.toString('hex'), function(err, hash) {
 });
 ```
 
-## 钱包其它功能
-
 ## 回顾：
 
 * 钱包初始化：
@@ -334,9 +341,9 @@ web3.eth.sendRawTransaction(serializedTx.toString('hex'), function(err, hash) {
     * 构造交易数据：
         * 交易对象：{ from: '', to: '', ...}
         * data：ethereumjs-abi.methodID() + ethereumjs-abi.rawEncode()
-    * 交易签名：ethereumjs-tx.sign(privateKey)、ethereumjs-tx.serialize()
+    * 交易签名：ethereumjs-tx.sign(privateKey) -> ethereumjs-tx.serialize()
     * 发送交易：
         * 转账：web3.eth.sendTransaction(transactionObject [, callback])
         * 合约（已经签名的交易）：web3.eth.sendRawTransaction(signedTransactionData [, callback])
 
-有了以上几个核心方法，你就可以完成钱包应用了。
+有了以上几个核心方法，你就可以完成数字钱包应用了。

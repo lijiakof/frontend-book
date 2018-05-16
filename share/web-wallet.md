@@ -32,7 +32,9 @@
 ## 钱包需要什么功能？
 钱包的核心功能：
 
-* 创建钱包 & 导入钱包
+* 钱包初始化
+    * 创建
+    * 导入
 * 查询钱包的资产
 * 交易
     * 转账
@@ -175,12 +177,36 @@ console.log(balance.toNumber()); // 1000000000000
 
 参考以太坊文档：
 
-### 构建 data
-这一过程相对复杂，可以参考[Ethereum Contract ABI](https://github.com/ethereum/wiki/wiki/Ethereum-Contract-ABI)：
+* nonce：记录账户已执行的交易总数，nonce 的值随着每个新交易的执行不断增加
+* gasPrice：你愿为该交易支付的每单位 gas 的价格，gas 价格目前以 GWei 为单位，其范围是0.1->100+Gwei
+* gasLimit：你愿为该交易支付的最高 gas 总额。该上限能确保在出现交易执行问题（比如陷入无限循环）之时，你的账户不会耗尽所有资金。一旦交易执行完毕，剩余所有 gas 会返还至你的账户
+* to：目标地址，如果是转账交易就是收款地址，如果是合约调用就是合约地址
+* value：即你打算发送的以太币总量。如果你要执行一个转账交易，向另一个人或合约发送以太币，你会需要设置 value 值。
+* data：不同的交易类型下该字段会有所不同，在接下来的介绍中会有该字段的详细说明
+* chainId：该字段用来标明交易数据要发送到哪个网络，1为主网，3位ropsten网络
 
-* 对调用合约函数的**函数名**进行签名
+### 构建 data
+这一过程相对复杂，可以参考[Ethereum Contract ABI](https://github.com/ethereum/wiki/wiki/Ethereum-Contract-ABI) 分两大过程：
+
+* 对调用合约函数的**函数名**进行编码
 * 对调用合约函数的**参数**进行编码
-* 
+* 细节省略一万个字...
+
+源代码：https://github.com/ethereumjs/ethereumjs-abi/blob/master/lib/index.js
+
+### 对于使用者非常简单
+相关文档：https://github.com/ethereumjs/ethereumjs-abi
+
+```
+var abi = require('ethereumjs-abi');
+
+var methodID = abi.methodID('sam', ['bytes', 'bool', 'uint256[]']);
+// returns the encoded binary (as a Buffer) data to be sent
+var encoded = abi.rawEncode(['bytes', 'bool', 'uint256[]'], ['dave', true, [1, 2, 3]]);
+
+var data = methodID.toString('hex') + rawEncode.toString('hex');
+console.log(data);
+```
 
 ### 签名
 交易数据构造好后，接下来我们将数据进行签名，并序列化，最后的数据就可以进行交易了，继续看源代码：
@@ -266,16 +292,17 @@ var serializedTx = tx.serialize(); // 这是最终交易需要发送的数据
 ```
 
 ## 发送交易
+发送交易我们使用 web3 的协议很容易就能搞定了：
 
 ```
 var transactionObject = {
-    nonce: '0x00',
-    gasPrice: '0x01',
-    gasLimit: '0x01',
+    nonce: '',
+    gasPrice: '',
+    gasLimit: '',
     from: '',
-    to: '0x633296baebc20f33ac2e1c1b105d7cd1f6a0718b',
-    value: '0x00',
-    data: '0xc7ed014952616d6100000000000000000000000000000000000000000000000000000000',
+    to: '',
+    value: '',
+    data: '',
 }
 
 web3.eth.sendTransaction(transactionObject, function(err, address) {
@@ -288,6 +315,7 @@ or
 
 ```
 // ...
+// 32字节的16进制格式的交易哈希串
 web3.eth.sendRawTransaction(serializedTx.toString('hex'), function(err, hash) {
     if (!err)
         console.log(hash);
@@ -296,15 +324,19 @@ web3.eth.sendRawTransaction(serializedTx.toString('hex'), function(err, hash) {
 
 ## 钱包其它功能
 
-## 回顾
+## 回顾：
 
-* 钱包初始化
+* 钱包初始化：
     * 创建：ethereumjs-wallet.generate()
     * 导入：ethereumjs-wallet.fromPrivateKey(privateKey)
 * 查询钱包的资产：web3.eth.getBalance(addressHexString [, defaultBlock] [, callback])
-* 交易
+* 交易：
     * 构造交易数据：
+        * 交易对象：{ from: '', to: '', ...}
+        * data：ethereumjs-abi.methodID() + ethereumjs-abi.rawEncode()
     * 交易签名：ethereumjs-tx.sign(privateKey)、ethereumjs-tx.serialize()
     * 发送交易：
         * 转账：web3.eth.sendTransaction(transactionObject [, callback])
         * 合约（已经签名的交易）：web3.eth.sendRawTransaction(signedTransactionData [, callback])
+
+有了以上几个核心方法，你就可以完成钱包应用了。

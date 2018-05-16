@@ -33,8 +33,10 @@
 钱包的核心功能：
 
 * 创建钱包 & 导入钱包
-* 查看钱包的资产
-* 发生交易
+* 查询钱包的资产
+* 交易
+    * 转账
+    * 调用合约
 
 ## 相关 Js 库
 
@@ -137,6 +139,16 @@ var privateKey2 = ethUtil.toBuffer('0xe601e598111629240e4dc6ec7a95534e025838bd0f
 var wallet2 = Wallet.fromPrivateKey(privateKey2);
 var publicKey2 = wallet2.getPublicKey();
 
+```
+
+## 查询钱包的资产
+查询钱包资产通过 web3.js 很容易实现：
+
+```
+var balance = web3.eth.getBalance("0x407d73d8a49eeb85d32cf465507dd71d507100c1");
+console.log(balance); // instanceof BigNumber
+console.log(balance.toString(10)); // '1000000000000'
+console.log(balance.toNumber()); // 1000000000000
 ```
 
 ## 钱包交易
@@ -249,12 +261,50 @@ var txParams = {
 var tx = new EthereumTx(txParams);
 tx.sign(privateKey);
 
-var serializedTx = tx.serialize();
+var serializedTx = tx.serialize(); // 这是最终交易需要发送的数据
 
 ```
 
 ## 发送交易
 
+```
+var transactionObject = {
+    nonce: '0x00',
+    gasPrice: '0x01',
+    gasLimit: '0x01',
+    from: '',
+    to: '0x633296baebc20f33ac2e1c1b105d7cd1f6a0718b',
+    value: '0x00',
+    data: '0xc7ed014952616d6100000000000000000000000000000000000000000000000000000000',
+}
+
+web3.eth.sendTransaction(transactionObject, function(err, address) {
+    if (!err)
+        console.log(address);
+});
+```
+
+or
+
+```
+// ...
+web3.eth.sendRawTransaction(serializedTx.toString('hex'), function(err, hash) {
+    if (!err)
+        console.log(hash);
+});
+```
+
 ## 钱包其它功能
 
 ## 回顾
+
+* 钱包初始化
+    * 创建：ethereumjs-wallet.generate()
+    * 导入：ethereumjs-wallet.fromPrivateKey(privateKey)
+* 查询钱包的资产：web3.eth.getBalance(addressHexString [, defaultBlock] [, callback])
+* 交易
+    * 构造交易数据：
+    * 交易签名：ethereumjs-tx.sign(privateKey)、ethereumjs-tx.serialize()
+    * 发送交易：
+        * 转账：web3.eth.sendTransaction(transactionObject [, callback])
+        * 合约（已经签名的交易）：web3.eth.sendRawTransaction(signedTransactionData [, callback])

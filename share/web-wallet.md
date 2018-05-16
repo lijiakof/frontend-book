@@ -52,10 +52,10 @@
 * web3
 
 ## 钱包的创建（私钥、公钥、地址）
-创建钱包我们可以采用 `ethereumjs-wallet` 库来完成，它是基于 椭圆曲线的ECDSA 算法来创建密钥对的。看代码：
+创建钱包我们可以采用 `ethereumjs-wallet` 库来完成，它是基于 椭圆曲线的ECDSA 算法来创建密钥对的。看源码：
 
-公钥：(ethereumjs-wallet)generate() -> (ethereumjs-util)privateToPublic -> secp256k1.publicKeyCreate -> publicKey
-地址：(ethereumjs-wallet)generate() -> (ethereumjs-util)privateToAddress -> (ethereumjs-util)sha3 -> (keccakjs)SHA3 -> address
+* 公钥生成：(ethereumjs-wallet)generate() -> (ethereumjs-util)privateToPublic -> secp256k1.publicKeyCreate -> publicKey
+* 地址生成：(ethereumjs-wallet)generate() -> (ethereumjs-util)privateToAddress -> (ethereumjs-util)sha3 -> (keccakjs)SHA3 -> address
 
 ```
 // ethereumjs-wallet 模块
@@ -141,10 +141,42 @@ var publicKey2 = wallet2.getPublicKey();
 
 ## 钱包交易
 钱包交易的过程：
+
 * 构造交易数据
 * 交易签名
 * 发送交易
 
+### 交易对象
+
+```
+{
+    nonce: '0x00',
+    gasPrice: '0x01',
+    gasLimit: '0x01',
+    to: '0x633296baebc20f33ac2e1c1b105d7cd1f6a0718b',
+    value: '0x00',
+    data: '0xc7ed014952616d6100000000000000000000000000000000000000000000000000000000',
+    // EIP 155 chainId - mainnet: 1, ropsten: 3
+    chainId: 3
+}
+```
+
+参考以太坊文档：
+
+### 构建 data
+这一过程相对复杂，可以参考[Ethereum Contract ABI](https://github.com/ethereum/wiki/wiki/Ethereum-Contract-ABI)：
+
+* 对调用合约函数的**函数名**进行签名
+* 对调用合约函数的**参数**进行编码
+* 
+
 ### 签名
+ethereumjs-tx
+
+
+```
+
+```
+
 
 ## 钱包其它功能

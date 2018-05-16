@@ -42,6 +42,7 @@
 * [Prerender（JavaScript 网站静态化）](share/prerender-server.md)
 * [一致性hash算法](share/consistent-hashing.md)
 * [WEB 前端性能优化实战](share/web-front-performance.md)
+* [WEB 数字钱包的实现](share/web-wallet.md)
 
 ## 技巧
 * [如何垂直居中](share/css-vetically.md)

@@ -42,6 +42,9 @@
 * [Prerender（JavaScript 网站静态化）](share/prerender-server.md)
 * [一致性hash算法](share/consistent-hashing.md)
 * [WEB 前端性能优化实战](share/web-front-performance.md)
+
+## 区块链技术
+* [区块链技术（Blockchain）](https://github.com/lijiakof/blockchain)
 * [WEB 数字钱包的实现](share/web-wallet.md)
 
 ## 技巧
@@ -79,7 +82,6 @@
 * [MVVM 的实现](share/mvvm.md)
 * [百场汇 Web 前端](http://reecho.baichanghui.com/article/1)
 * [初识 Nodejs 原理](share/nodejs-how-it-works.md)
-* [区块链技术（Blockchain）](https://github.com/lijiakof/blockchain)
 * [Nuxt.js 入门指南](https://github.com/lijiakof/nuxt-tutorial)
 * [React Native](share/react-native.md)
 

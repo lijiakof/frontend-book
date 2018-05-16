@@ -171,12 +171,90 @@ var publicKey2 = wallet2.getPublicKey();
 * 
 
 ### 签名
-ethereumjs-tx
+交易数据构造好后，接下来我们将数据进行签名，并序列化，最后的数据就可以进行交易了，继续看源代码：
 
+* Hash：(ethereumjs-tx)hash -> (ethereumjs-util)rlphash -> (rlp)encode -> (keccak)SHA3
+* 签名：(ethereumjs-util)ecsign -> secp256k1.sign
+
+```
+// ethereumjs-tx 模块
+Transaction.prototype.sign = function sign(privateKey) {
+    var msgHash = this.hash(false);
+    var sig = ethUtil.ecsign(msgHash, privateKey);
+    if (this._chainId > 0) {
+        sig.v += this._chainId * 2 + 8;
+    }
+    Object.assign(this, sig);
+};
+
+Transaction.prototype.hash = function hash(includeSignature) {
+    if (includeSignature === undefined) includeSignature = true;
+
+    // EIP155 spec:
+    // when computing the hash of a transaction for purposes of signing or recovering,
+    // instead of hashing only the first six elements (ie. nonce, gasprice, startgas, to, value, data),
+    // hash nine elements, with v replaced by CHAIN_ID, r = 0 and s = 0
+
+    var items = void 0;
+    if (includeSignature) {
+        items = this.raw;
+    } else {
+        if (this._chainId > 0) {
+            var raw = this.raw.slice();
+            this.v = this._chainId;
+            this.r = 0;
+            this.s = 0;
+            items = this.raw;
+            this.raw = raw;
+        } else {
+            items = this.raw.slice(0, 6);
+        }
+    }
+
+    // create hash
+    return ethUtil.rlphash(items);
+};
+
+// ethereumjs-util 模块
+exports.ecsign = function (msgHash, privateKey) {
+    const sig = secp256k1.sign(msgHash, privateKey)
+
+    const ret = {}
+    ret.r = sig.signature.slice(0, 32)
+    ret.s = sig.signature.slice(32, 64)
+    ret.v = sig.recovery + 27
+    return ret
+}
 
 ```
 
+### 同样对于使用者非常简单
+相关文档：https://github.com/ethereumjs/ethereumjs-tx
+
+```
+const EthereumTx = require('ethereumjs-tx');
+
+var privateKey = ...;
+var txParams = {
+    nonce: '0x00',
+    gasPrice: '0x09184e72a000', 
+    gasLimit: '0x2710',
+    to: '0x0000000000000000000000000000000000000000', 
+    value: '0x00', 
+    data: '0x7f7465737432000000000000000000000000000000000000000000000000000000600057',
+    // EIP 155 chainId - mainnet: 1, ropsten: 3
+    chainId: 3
+};
+
+var tx = new EthereumTx(txParams);
+tx.sign(privateKey);
+
+var serializedTx = tx.serialize();
+
 ```
 
+## 发送交易
 
 ## 钱包其它功能
+
+## 回顾

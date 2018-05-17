@@ -66,7 +66,7 @@ TODO：
 
 ## 相关 Js 库
 
-* ethereumjs-util
+* ethereumjs-util：工具类
     * bn.js：BigNumber 数据类型
     * safe-buffer：Buffer 二进制数据类型
     * create-hash: Hash 算法
@@ -74,10 +74,10 @@ TODO：
     * keccak：SHA-3 算法
     * rlp：RLP 编码
     * ethjs-util
-* ethereumjs-wallet
-* ethereumjs-tx
-* ethereumjs-abi
-* web3
+* ethereumjs-wallet：钱包创建
+* ethereumjs-tx：交易信息处理，签名、Hash、校验等
+* ethereumjs-abi：ABI 处理
+* web3：和以太坊之间通讯
 
 ## 钱包的创建（私钥、公钥、地址）
 创建钱包我们可以采用 `ethereumjs-wallet` 库来完成，它是基于 椭圆曲线的ECDSA 算法来创建密钥对的。看源码：
@@ -374,4 +374,4 @@ web3.eth.sendRawTransaction(serializedTx.toString('hex'), function(err, hash) {
 * 区块链中到底有没有用户的钱包信息？
     * 没有，只有交易信息
 
-所以，中本聪通过这一独特的思维，将用户钱包信息（账户体系）全部由用户自己本地来管理；账本或者交易（公开信息）中除了钱包地址没有存储任何其他帐户信息。这样一来区块链看起来是公开透明又是安全可靠的。
+所以，中本聪通过这一独特的思维，将用户钱包信息（账户体系）全部由用户自己本地来管理；账本或者交易（公开信息）中除了钱包地址没有存储任何其它帐户信息。这样一来区块链看起来是公开透明又是安全可靠的。

@@ -45,7 +45,7 @@
 
 ## 区块链技术
 * [区块链技术（Blockchain）](https://github.com/lijiakof/blockchain)
-* [WEB 数字钱包的实现](share/web-wallet.md)
+* [WEB 数字钱包初探](share/web-wallet-abc.md)
 
 ## 技巧
 * [如何垂直居中](share/css-vetically.md)

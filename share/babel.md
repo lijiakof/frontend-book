@@ -80,7 +80,7 @@ AST：抽象语法树（Abstract Syntax Tree），指的是源代码语法所对
 * http://esprima.org/demo/parse.html
 
 ## 如何使用？
-Babel 提供了很多的使用方式，例如：直接引入 babel 脚本让浏览器环境支持最新语法；或者在服务器上全局安装 Babel CLI，让服务器端支持最新语法；当然比较常用的是在构建工具中使用，让代码在转换编译的过程中让代码支持最新语法。下面以 Webpack 为例。
+Babel 提供了很多的使用方式，例如：直接引入 babel 脚本让浏览器环境支持最新语法；或者在服务器上全局安装 Babel CLI，让服务器端支持最新语法；当然比较常用的是在构建工具中使用，让代码在转换编译的过程中让其支持最新语法。下面以 Webpack 为例：
 
 * 安装：
 
@@ -115,11 +115,30 @@ npm install babel-preset-env --save-dev
 }
 ```
 
-* presets
-配置各种插件是一件非常痛苦的事情，其实 presets 就是各个插件的集合，它可以根据当前的运行环境，自动确定我们需要的插件和polyfills，我们只需要配置需要支持的浏览器和相关版本就行了：
+## presets
+配置各种插件是一件非常痛苦的事情，其实 presets 就是各个插件的集合，它可以根据当前的运行环境，自动确定我们需要的插件和polyfills，我们只需要配置需要支持的浏览器和相关版本就行了。
+
+```
+{
+    "presets": [
+        ["env", {
+            "targets": {
+                "browsers": ["last 2 versions", "safari >= 7"]
+            }
+        }]
+    ]
+}
+```
+
+具体参考文档：https://babeljs.cn/docs/plugins/preset-env
 
 ## babel-polyfill
 babel-polyfill 会将 ES2015+ 环境整个引入到你的代码环境中，也就是说你可以直接在代码中使用全新原生对象和API。如果使用，你可以选择在程序入口全部引入，或者通过构建工具按需引入。
 
+具体参考文档：https://babeljs.cn/docs/usage/polyfill/
+
 ## runtime
 TODO
+
+## 参考
+* http://babeljs.io/

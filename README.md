@@ -84,6 +84,7 @@
 * [初识 Nodejs 原理](share/nodejs-how-it-works.md)
 * [Nuxt.js 入门指南](https://github.com/lijiakof/nuxt-tutorial)
 * [React Native](share/react-native.md)
+* [Babel](share/babel.md)
 
 ## 软件工程
 * [认识流程图](share/flow-chart.md)
@@ -92,11 +93,11 @@
 * [初识 Scrum 敏捷](share/agile-scrum.md)
 
 ## TODO
+* [WEB 数字钱包设计](share/web-wallet-design.md)
 * 屏幕上的“设计学”
 * Javascript 迭代器
 * [贝塞尔曲线](share/bezier.md)
 * [认识 Git](share/git.md)
-* [Babel](share/babel.md)
 * 响应式设计 9 大原则 http://blog.froont.com/9-basic-principles-of-responsive-web-design/
 * pure
 * [Rollup](share/rollup.md)

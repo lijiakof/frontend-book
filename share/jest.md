@@ -1,5 +1,7 @@
 # Jest
-Jest 是由 Facebook 出品的 JavaScript 单元测试框架，官方声称通过它可以完成“令人愉快的 JavaScript 测试”。
+Jest 是由 Facebook 出品的 JavaScript 测试框架，官方声称通过它可以完成“令人愉快的 JavaScript 测试”。
+
+在 TDD（Test-Driven Development）开发方法中，编写测试代码尤为重要，Jest 让这一切变得更佳的简单。
 
 ## 快速入门
 

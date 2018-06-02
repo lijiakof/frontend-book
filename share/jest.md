@@ -1,13 +1,14 @@
 # Jest
-Jest 是有 Facebook 出品的 JavaScript 单元测试框架，官方声称“令人愉快的 JavaScript 测试”。
+Jest 是由 Facebook 出品的 JavaScript 单元测试框架，官方声称通过它可以完成“令人愉快的 JavaScript 测试”。
 
 ## 快速入门
 
 ### 安装：
-    * yarn: `yarn add --dev jest`
-    * or npm: `npm install --save-dev jest`
 
-### 即将测试的模块 `hello.js`：
+* yarn: `yarn add --dev jest`
+* or npm: `npm install --save-dev jest`
+
+### 被测试的模块 `hello.js`：
 
 ```
 function hello() {

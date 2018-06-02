@@ -85,6 +85,7 @@
 * [Nuxt.js 入门指南](https://github.com/lijiakof/nuxt-tutorial)
 * [React Native](share/react-native.md)
 * [Babel](share/babel.md)
+* [Jest](share/jest.md)
 
 ## 软件工程
 * [认识流程图](share/flow-chart.md)

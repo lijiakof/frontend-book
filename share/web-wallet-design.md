@@ -33,24 +33,25 @@
         * methodName
         * paramsName[]
         * paramsValue[]
-* wallet
-    * privateKey: string
-    * publicKey: string
-    * address: string
-    * generate([currency]): wallet
-    * import(key [, type] [, currency]): wallet
+* attributes
+    * privateKey
+    * publicKey
+    * address
+    * currency
+* methods
+    * generate([currency]): Wallet
+    * import(key [, type] [, currency]): Wallet
         * type: 'privateKey', 'keystore', 'mnemonicPhrase', 'readonly'
         * key: string
         * currency: string
-    * // export(pwd [, currency])
-    * private encodeAbi(methodName, paramsName[], paramsValue[]): string
-    * private signTx(transactionObject): string
-    * getBalance(addressHexString [, defaultBlock] [, callback])
-    * getTransaction(transactionHash [, callback])
-    * send(transactionObject[, callback])
+    * setProvider(host)
+    * getBalance(addressHexString): Promise
+    * getTokenBalance(addressHexString, contractAddress): Promise
+    * getTransaction(transactionHash): Promise
+    * getTransactions(addressHexString): Promise
+    * sendTransaction(transactionObject): Promise
 * storage
     * 私钥如何存储
-* market
 
 ## 原型
 

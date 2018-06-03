@@ -43,8 +43,11 @@
 * [一致性hash算法](share/consistent-hashing.md)
 * [WEB 前端性能优化实战](share/web-front-performance.md)
 
-## 区块链技术
-* [区块链技术（Blockchain）](https://github.com/lijiakof/blockchain)
+## 区块链技术（Blockchain）
+* [什么是区块链](https://github.com/lijiakof/blockchain/blob/master/docs/00-blockchain.md)
+* [以太坊区块链环境搭建](https://github.com/lijiakof/blockchain/blob/master/docs/01-ethereum-env.md)
+* [开始第一个去中心化应用 Dapp](https://github.com/lijiakof/blockchain/blob/master/docs/02-hello-dapp.md)
+* [智能合约](https://github.com/lijiakof/blockchain/blob/master/docs/03-smart-contract.md)
 * [WEB 数字钱包初探](share/web-wallet-abc.md)
 
 ## 技巧
@@ -80,12 +83,12 @@
 * [Vuejs Server Side Render](https://github.com/lijiakof/vue-just-ssr)
 * [Web 系统架构](share/web-architecture.md)
 * [MVVM 的实现](share/mvvm.md)
-* [百场汇 Web 前端](http://reecho.baichanghui.com/article/1)
 * [初识 Nodejs 原理](share/nodejs-how-it-works.md)
 * [Nuxt.js 入门指南](https://github.com/lijiakof/nuxt-tutorial)
+* [Babel 入门指南](share/babel.md)
+* [Jest 入门指南](share/jest.md)
 * [React Native](share/react-native.md)
-* [Babel](share/babel.md)
-* [Jest](share/jest.md)
+* [百场汇 Web 前端](http://reecho.baichanghui.com/article/1)
 
 ## 软件工程
 * [认识流程图](share/flow-chart.md)

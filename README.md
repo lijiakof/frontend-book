@@ -88,6 +88,7 @@
 * [Babel 入门指南](share/babel.md)
 * [Jest 入门指南](share/jest.md)
 * [React Native](share/react-native.md)
+* [Rollup](share/rollup.md)
 * [百场汇 Web 前端](http://reecho.baichanghui.com/article/1)
 
 ## 软件工程
@@ -104,7 +105,6 @@
 * [认识 Git](share/git.md)
 * 响应式设计 9 大原则 http://blog.froont.com/9-basic-principles-of-responsive-web-design/
 * pure
-* [Rollup](share/rollup.md)
 * [Karma & Jasmine](share/karma-jasmine.md)
 * [Yeoman](share/yeoman.md)
 * [浏览器工作原理](share/browser-work.md)
@@ -141,3 +141,4 @@
 * d3.js
 * parceljs
 * loopback
+* [WordPress 三分钟快速建站](share/wordpress-tutorial.md)

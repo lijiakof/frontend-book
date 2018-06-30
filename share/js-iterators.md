@@ -20,7 +20,7 @@ for (let value of list) {
 }
 ```
 
-我们希望得到一个确保顺序的迭代，为了确保对象可以迭代，它需要实现一个可迭代的协议，即拥有 `Symbol.iterator` 属性，这个属性将会被 `for-in` 所使用。list[Symbol.iterator] 的值必须是符合迭代协议的函数，它需要返回一个类似于：` { next: function() {} } ` 的值：
+我们希望得到一个确保顺序的迭代，为了确保对象可以迭代，它需要实现一个可迭代的协议，即拥有 `Symbol.iterator` 属性，这个属性将会被 `for-of` 所使用。list[Symbol.iterator] 的值必须是符合迭代协议的函数，它需要返回一个类似于：` { next: function() {} } ` 的值：
 
 ```
 list[Symbol.iterator] = function () {
@@ -32,7 +32,7 @@ list[Symbol.iterator] = function () {
 }
 ```
 
-当 `next` 函数被 `for-of` 循环调用时，它需要返回一个类似于 `{value: …, done: [true/false]}` 的对象。这样一来我们实现的有序的迭代器如下：
+当 `next()` 函数被 `for-of` 循环调用时，它需要返回一个类似于 `{value: ..., done: [true/false]}` 的对象。这样一来我们实现的有序的迭代器如下：
 
 ```
 list[Symbol.iterator] = function () {

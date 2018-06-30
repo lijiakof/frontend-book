@@ -20,6 +20,7 @@
 * [使用 iconfont 的好处](share/icon-font.md)
 * [本地存储与 Cookies 的区别](share/storage-vs-cookies.md)
 * [JavaScript 中的 this](share/javascript-this.md)
+* [ES6 迭代器](share/js-iterators.md)
 * [Web APP 站点的缓存问题](share/web-cache.md)
 * [如何解决 Ajax 的跨域问题](share/cross-domain.md)
 * [Html5 新特性之 Websocket](share/html5-websocket.md)
@@ -100,7 +101,6 @@
 ## TODO
 * [WEB 数字钱包设计](share/web-wallet-design.md)
 * 屏幕上的“设计学”
-* Javascript 迭代器
 * [贝塞尔曲线](share/bezier.md)
 * [认识 Git](share/git.md)
 * 响应式设计 9 大原则 http://blog.froont.com/9-basic-principles-of-responsive-web-design/
@@ -142,3 +142,4 @@
 * parceljs
 * loopback
 * [WordPress 三分钟快速建站](share/wordpress-tutorial.md)
+* EventEmitter

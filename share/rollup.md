@@ -164,3 +164,6 @@ export default {
 
 ## 总结
 Rollup 使用起来非常简单，另外它通过 `Tree-shaking` 技术去除无用代码，让整个项目更佳的高效，最后它是一个非常好的类库构建工具，如果再借助 Jest 进行单元测试，我们就非常好的开发 JS 类库了。
+
+## 参考
+* https://rollupjs.org

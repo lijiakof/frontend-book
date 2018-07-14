@@ -17,6 +17,7 @@
 * [CSS 盒模型 vs Flex 布局](share/cssboxmodel-vs-flexbox.md)
 * [DOM 尺寸和位置](share/dom-size-position.md)
 * [CSS3 动画](share/css3-animation.md)
+* [CSS3 sticky 粘性布局](share/css-position-sticky.md)
 * [使用 iconfont 的好处](share/icon-font.md)
 * [本地存储与 Cookies 的区别](share/storage-vs-cookies.md)
 * [JavaScript 中的 this](share/javascript-this.md)
@@ -100,6 +101,7 @@
 
 ## TODO
 * [WEB 数字钱包设计](share/web-wallet-design.md)
+* [CSS3 Shapes 打破矩形设计的限制](share/css3-shapes.md)
 * 屏幕上的“设计学”
 * [贝塞尔曲线](share/bezier.md)
 * [认识 Git](share/git.md)
@@ -129,7 +131,6 @@
 * Web Notification
 * Mobile 端如何去除 input 框的选中样式
 * checkbox 和 radio 的样式
-* position:sticky
 * border-image
 * 如何加快 Mobile 端 click 事件
 * 软件设计的七大原则

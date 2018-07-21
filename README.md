@@ -18,6 +18,7 @@
 * [DOM 尺寸和位置](share/dom-size-position.md)
 * [CSS3 动画](share/css3-animation.md)
 * [CSS3 sticky 粘性布局](share/css-position-sticky.md)
+* [CSS3 `clip-path` & `clip-path` 打破矩形设计的限制](share/css3-shapes.md)
 * [使用 iconfont 的好处](share/icon-font.md)
 * [本地存储与 Cookies 的区别](share/storage-vs-cookies.md)
 * [JavaScript 中的 this](share/javascript-this.md)
@@ -101,7 +102,6 @@
 
 ## TODO
 * [WEB 数字钱包设计](share/web-wallet-design.md)
-* [CSS3 Shapes 打破矩形设计的限制](share/css3-shapes.md)
 * 屏幕上的“设计学”
 * [贝塞尔曲线](share/bezier.md)
 * [认识 Git](share/git.md)

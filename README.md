@@ -52,6 +52,7 @@
 * [开始第一个去中心化应用 Dapp](https://github.com/lijiakof/blockchain/blob/master/docs/02-hello-dapp.md)
 * [智能合约](https://github.com/lijiakof/blockchain/blob/master/docs/03-smart-contract.md)
 * [WEB 数字钱包初探](share/web-wallet-abc.md)
+* [WEB 数字钱包从产品到发布](share/web-wallet-design.md)
 
 ## 技巧
 * [如何垂直居中](share/css-vetically.md)
@@ -101,7 +102,8 @@
 * [初识 Scrum 敏捷](share/agile-scrum.md)
 
 ## TODO
-* [WEB 数字钱包设计](share/web-wallet-design.md)
+* Web3.js
+* IPFS
 * 屏幕上的“设计学”
 * [贝塞尔曲线](share/bezier.md)
 * [认识 Git](share/git.md)

@@ -362,6 +362,11 @@ web3.eth.sendRawTransaction(serializedTx.toString('hex'), function(err, hash) {
 
 有了以上几个核心方法，你就可以完成数字钱包应用了。
 
+## 钱包 App 的整体架构
+
+![program](../resources/images/wallet-program.png)
+
+
 ## 问题：
 我们了解了一下钱包的大致原理后，来看看最早提出来的问题：
 

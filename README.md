@@ -103,7 +103,8 @@
 
 ## TODO
 * Web3.js
-* IPFS
+* [IPFS](share/blockchain-ipfs.md)
+* Javascript 的内存管理
 * 屏幕上的“设计学”
 * [贝塞尔曲线](share/bezier.md)
 * [认识 Git](share/git.md)

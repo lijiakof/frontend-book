@@ -362,21 +362,101 @@ web3.eth.sendRawTransaction(serializedTx.toString('hex'), function(err, hash) {
 
 有了以上几个核心方法，你就可以完成数字钱包应用了。
 
+## 钱包核心 SDK 的封装
+为了简化以上的操作，并且让钱包具有更好的扩展性（支持以太币、比特币等），我们将上面的整过过程进行一次封装，让开发人员更好的使用，我们做成了 [trip-wallet](https://github.com/thetripio/wallet-js)。
+
+### Install
+
+```
+yarn add trip-wallet
+Or
+npm install trip-wallet
+```
+
+### Usage
+
+```
+import Wallet from 'trip-wallet';
+
+let wallet = Wallet('eth');
+wallet.generate();
+wallet.setProvider('http://host:port');
+
+// async/await
+let balance = await wallet.getBalance(wallet.address);
+
+// Promise
+wallet.getBalance(wallet.address).then(res => {
+    balance = res;
+}, err => {
+
+});
+```
+
+
+### Object & Attributes
+
+* walletObject
+    * privateKey: String (hex string)
+    * publicKey: String (hex string)
+    * address: String (hex string)
+    * currency: String
+* transactionObject
+    * contract: Object
+    * methodName: String
+    * arguments: Array[]
+    * privateKey: String (hex string)
+    * from: String (hex string)
+    * to: String (hex string)
+    * value: Number | String | BigNumber
+    * gasLimit: Number | String | BigNumber
+    * gasPrice: Number | String | BigNumber
+    * data: String
+    * none: Number
+
+### Methods
+
+* generate([currency]): Object
+* import(key [, type] [, currency]): Object
+    * type: 'privateKey', 'keystore', 'mnemonicPhrase', 'readonly'
+    * key: String
+    * currency: String
+* setProvider(host)
+* getBalance(addressHexString): Promise
+* getTokenBalance(addressHexString, contractAddress): Promise
+* getTransaction(transactionHash): Promise
+* contract(abi, address): Object
+* estimateGas(transactionObject): Promise
+* gasPrice(): Promise
+* sendTransaction(transactionObject): Promise
+
+### eth-util
+
+* toWei(num, unit)
+* fromWei(num, unit)
+* toBigNumber
+* toBuffer
+* toHex
+* verifyPrivateKey
+* decodeAbi
+* encodeAbi
+* signTransaction
+
 ## 钱包 App 的整体架构
 
 ![program](../resources/images/wallet-program.png)
-
 
 ## 问题：
 我们了解了一下钱包的大致原理后，来看看最早提出来的问题：
 
 * 我们的钱包密码（私钥）是不是被这些 App 偷偷摸摸的把它劫获了？
-    * 区块链中没有存储任何账户信息，至少在交易过程中，我们没有将密码信息传递出去；
-    * 在生成或者导入钱包，交易信息的构建过程，如果软件本身都是在本地完成，我们不会泄露密码；
+    * 区块链中没有存储任何账户私钥信息，至少在交易过程中，我们没有将私钥信息传递出去；
+    * 在生成或者导入钱包，交易信息的构建过程，都是在本地完成，我们不会泄露用户私钥；
     * 除非软件本身代码上做手脚；
     * 所以钱包应用需要开源；
 * 各大交易平台中，我购买的数字货币到底在哪儿？
 * 区块链中到底有没有用户的钱包信息？
-    * 没有，只有交易信息
+    * 当钱包地址产生了交易，只会存储钱包的地址信息
+    * 如果钱包地址没有产生任何交易，没有存储该钱包的相关信息
 
 所以，中本聪通过这一独特的思维，将用户钱包信息（账户体系）全部由用户自己本地来管理；账本或者交易（公开信息）中除了钱包地址没有存储任何其它帐户信息。这样一来区块链看起来是公开透明又是安全可靠的。

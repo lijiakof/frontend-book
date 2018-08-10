@@ -1,7 +1,7 @@
 # WEB 数字钱包初探
 最近区块链风靡互联网行业，个人也专门了解了相关技术，也买过数字货币，当然也有数字钱包。一直在思考这种去中心化的钱包，到底安不安全，原理是个啥：
 
-* 我们的钱包密码（私钥）是不是被这些 App 偷偷摸摸的把它劫获了？
+* 我们的钱包密码（私钥）或者其它钱包信息，是否会在网络中传输？
 * 各大交易平台中，我购买的数字货币到底在哪儿？
 * 区块链中到底有没有用户的钱包信息？
 
@@ -18,11 +18,13 @@
 加密学在区块链技术中属于核心技术之一，钱包的生成也是由加密算法来完成的，当然如果讲述加密技术对我这个不专业的人来说不能讲述的非常明白，不过我们从对它的功能上来大概的了解一下相关概念。
 
 通俗的讲：
+
 * 加密：把东西（信息）用钥匙锁在箱子里面，只有拿到钥匙的人才能使用这个东西（查看信息）；
 * 对称加密：关闭箱子的钥匙和打开箱子的要是一样；
 * 非对称加密：关闭箱子的钥匙和打开箱子的不一样；
 
 专业的讲：
+
 * 加密：将明文信息改变为难以读取的密文内容，使之不可读。只有拥有解密方法的对象，经由解密过程，才能将密文还原为正常可读的内容；
 * 对称加密：加密和解密时使用相同的密钥；
 * 非对称加密：需要两个密钥来进行加密和解密，它们分别是公钥和私钥，如果用公钥对数据进行加密，只能用对应的私钥才能解密；如果用私钥对数据进行加密，那么只能用公钥才能解密；
@@ -177,7 +179,10 @@ console.log(balance.toNumber()); // 1000000000000
 钱包交易的过程：
 
 * 构造交易数据
+    * 以太币交易数据
+    * 合约交易数据
 * 交易签名
+* 模拟交易，估算 Gas
 * 发送交易
 
 ### 交易对象
@@ -206,7 +211,7 @@ console.log(balance.toNumber()); // 1000000000000
 * chainId：该字段用来标明交易数据要发送到哪个网络，1为主网，3位ropsten网络
 
 ### 构建 data
-这一过程相对复杂，可以参考[Ethereum Contract ABI](https://github.com/ethereum/wiki/wiki/Ethereum-Contract-ABI) 分两大过程：
+如果是合约交易，需要通过合约信息来构建 data 字段。这一过程相对复杂，可以参考[Ethereum Contract ABI](https://github.com/ethereum/wiki/wiki/Ethereum-Contract-ABI) 分两大过程：
 
 * 对调用合约函数的**函数名**进行编码
 * 对调用合约函数的**参数**进行编码
@@ -310,8 +315,31 @@ tx.sign(privateKey);
 var serializedTx = tx.serialize(); // 这是最终交易需要发送的数据
 ```
 
+## 估算 Gas
+需要签名的交易，需要估算 Gas 费用，如果给一个不合理的 Gas 交易不会发送成功。我们可以通过 Web3 来估算一个相对合理的 Gas，让交易能够顺利的进行。
+
+```
+var transactionObject = {
+    nonce: '',
+    gasPrice: '',
+    from: '',
+    to: '',
+    value: '',
+    data: '',
+}
+
+web3.eth.estimateGas(transactionObject, function(err, res) {
+    if (!err)
+        console.log(res);
+});
+
+```
+
 ## 发送交易
 发送交易我们使用 web3 的协议很容易就能搞定了：
+
+* 不需要签名的交易：web3.eth.sendTransaction
+* 需要签名的交易：web3.eth.sendRawTransaction
 
 ```
 var transactionObject = {
@@ -423,12 +451,11 @@ wallet.getBalance(wallet.address).then(res => {
     * currency: String
 * setProvider(host)
 * getBalance(addressHexString): Promise
-* getTokenBalance(addressHexString, contractAddress): Promise
+* sendTransaction(transactionObject): Promise
 * getTransaction(transactionHash): Promise
 * contract(abi, address): Object
 * estimateGas(transactionObject): Promise
 * gasPrice(): Promise
-* sendTransaction(transactionObject): Promise
 
 ### eth-util
 
@@ -449,7 +476,7 @@ wallet.getBalance(wallet.address).then(res => {
 ## 问题：
 我们了解了一下钱包的大致原理后，来看看最早提出来的问题：
 
-* 我们的钱包密码（私钥）是不是被这些 App 偷偷摸摸的把它劫获了？
+* 我们的钱包密码（私钥）或者其它钱包信息，是否会在网络中传输？
     * 区块链中没有存储任何账户私钥信息，至少在交易过程中，我们没有将私钥信息传递出去；
     * 在生成或者导入钱包，交易信息的构建过程，都是在本地完成，我们不会泄露用户私钥；
     * 除非软件本身代码上做手脚；

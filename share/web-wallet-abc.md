@@ -13,7 +13,6 @@
     * 公钥、私钥
 * 签名
     * 验签
-* 证书
 
 ## 加密 & 对称加密 & 非对称加密
 加密学在区块链技术中属于核心技术之一，钱包的生成也是由加密算法来完成的，当然如果讲述加密技术对我这个不专业的人来说不能讲述的非常明白，不过我们从对它的功能上来大概的了解一下相关概念。
@@ -46,9 +45,6 @@
     * 解密签名信息：用**发送者公钥**对签名信息进行解密
     * 生成数据摘要：将接收的数据进行 Hash
     * 对比数据：如果解密的签名信息和生成的数据摘要相同则能确认该数字签名是发送者
-
-## 证书
-TODO：
 
 ## 加密算法
 加密算法有很多种：RSA、RC2、RC4、IDEA、RSA、DSA、ADS、MD5、PKCS、ECC 等等，想了解算法的同学自己百度一下。
@@ -345,7 +341,12 @@ web3.eth.sendRawTransaction(serializedTx.toString('hex'), function(err, hash) {
 });
 ```
 
-## 回顾：
+## 钱包交易过程
+
+![transact](../resources/images/wallet-transact-flowchart.jpg)
+
+
+## 回顾一下钱包的核心功能：
 
 * 钱包初始化：
     * 创建：ethereumjs-wallet.generate()
@@ -392,7 +393,6 @@ wallet.getBalance(wallet.address).then(res => {
 
 });
 ```
-
 
 ### Object & Attributes
 

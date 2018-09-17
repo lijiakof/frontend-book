@@ -14,7 +14,7 @@
 
 ## How to install React Native
 
-* development environment...
+* [development environment refer to](./react-native-environment.md)
 * `brew install node`
 * `brew install watchman`
 * `npm install -g react-native-cli`
@@ -100,13 +100,14 @@ export default class HelloWorld extends Component {
 * `setState()` is async
 
 ```
-// hello-world.js
-//...
+// my-state.js
+import React, { Component } from 'react';
+import { Text, View } from 'react-native';
 
-export default class HelloWorld extends Component {
-    
+export default class MyState extends Component {
+
     state = {
-        message: ''
+        message: '',
     };
 
     componentDidMount() {
@@ -119,8 +120,7 @@ export default class HelloWorld extends Component {
 
     render() {
         return (
-            <View style={styles.container}>
-                //...
+            <View>
                 <Text>
                     {this.state.message}
                 </Text>
@@ -128,6 +128,7 @@ export default class HelloWorld extends Component {
         );
     }
 }
+
 ```
 
 ### Style
@@ -144,7 +145,42 @@ export default class HelloWorld extends Component {
 * [Refer to](https://github.com/lijiakof/frontend-book/blob/master/share/cssboxmodel-vs-flexbox.md)
 
 ### Handling Text Input
+
+* import `TextInput` Component
+* `onChangeText` Event
+* `setState`
+
+```
+// my-input.js
+import React, { Component } from 'react';
+import { Text, View, TextInput } from 'react-native';
+
+export default class MyInput extends Component {
+
+    state = {
+        text: '',
+    };
+
+    render() {
+        return (
+            <View>
+                <TextInput onChangeText={(text) => this.setState({ text })}></TextInput>
+                <Text>{this.state.text}</Text>
+            </View>
+        );
+    }
+}
+
+
+```
+
 ### ScrollView
+
+* import `ScrollView` Component;
+* Can scroll both vertically and horizontally, by setting `horizontal` property;
+
+
+
 ### FlatList and SectionList
 ### Network
 

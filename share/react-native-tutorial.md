@@ -179,12 +179,89 @@ export default class MyInput extends Component {
 * import `ScrollView` Component;
 * Can scroll both vertically and horizontally, by setting `horizontal` property;
 
+```
+// my-scroll.js
+import React, { Component } from 'react';
+import { Text, ScrollView } from 'react-native';
 
+export default class MyScroll extends Component {
+
+    render() {
+        return (
+            <ScrollView>
+                <Text style={{ fontSize: 96 }}>Large Word</Text>
+                <Text style={{ fontSize: 96 }}>Big World</Text>
+                <Text style={{ fontSize: 96 }}>Great World</Text>
+            </ScrollView>
+        );
+    }
+}
+
+```
 
 ### FlatList and SectionList
+
+* import `FlatList` Component;
+* set `data`;
+* set `renderItem`;
+* [Refer to](http://facebook.github.io/react-native/docs/flatlist)
+* [SectionList Refer to](http://facebook.github.io/react-native/docs/sectionlist)
+
+```
+// my-flat-list.js
+import React, { Component } from 'react';
+import { FlatList, StyleSheet, Text } from 'react-native';
+
+export default class MyFlatList extends Component {
+    render() {
+        return (
+            <FlatList
+                data={[
+                    { key: 'Devin' },
+                    { key: 'Jackson' },
+                    { key: 'James' },
+                    { key: 'Joel' },
+                    { key: 'John' },
+                    { key: 'Jillian' },
+                    { key: 'Jimmy' },
+                    { key: 'Julie' },
+                ]}
+                renderItem={({ item }) => <Text>{item.key}</Text>}
+            />
+        );
+    }
+}
+```
+
 ### Network
 
+* build-in fatch: http://facebook.github.io/react-native/docs/network
+* Or npm axios
 
+```
+import React, { Component } from 'react';
+import { Text, View } from 'react-native';
 
+export default class MyNetwork extends Component {
 
+    state = {
+        data: ''
+    };
 
+    async componentDidMount() {
+        const res = await fetch('http://ec2-54-222-217-237.cn-north-1.compute.amazonaws.com.cn:12800/api/v0/cat/Qmaj8UWNjTzBMBHkkaqSiyax2nFgiwYP2ewxnhGBucn6S8')
+        const json = await res.json();
+        console.log(json);
+        this.setState({data: json})
+    }
+
+    render() {
+        return (
+            <View>
+                <Text></Text>
+            </View>
+        );
+    }
+}
+
+```

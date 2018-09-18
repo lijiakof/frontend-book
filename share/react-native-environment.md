@@ -26,8 +26,10 @@
     * TTARGETS -> General -> Signing(Debug)
     * https://reactnative.cn/docs/running-on-device/
 * Build 到设备：
+    * 通过 USB 连接电脑和设备
     * Xcode toolbar -> Select Device -> Build and run
-* 使用 react-native-cli
+* Or 使用 react-native-cli
+    * 通过 USB 连接电脑和设备
     * 先安装：`npm install -g ios-deploy`
     * `react-native run-ios --device --configuration Debug`(?)
 
@@ -67,3 +69,9 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 ndk.dir=/development/android-sdk/ndk-bundle
 sdk.dir=/development/android-sdk
 ```
+
+### 真机调试
+* 设备开启 USB 调试
+* 通过 USB 连接电脑和设备
+* 检查连接是否成功：`adb devices`
+* 运行 `react-native run-android --port 8081`

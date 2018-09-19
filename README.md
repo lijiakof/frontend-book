@@ -55,9 +55,11 @@
 * [WEB 数字钱包从产品到发布](share/web-wallet-design.md)
 
 ## Native 开发
-* [React Native 极速指南](share/react-native-tutorial.md)
-* [React Native 开发环境](share/react-native-environment.md)
-* [React Native Navigation & 常用组件](share/react-native-navigation-components.md)
+* [React Native 极速指南](https://github.com/lijiakof/react-native/blob/master/docs/react-native-tutorial.md)
+* [React Native 开发环境](https://github.com/lijiakof/react-native/blob/master/docs/react-native-environment.md)
+* [React Native Navigation & 常用组件](https://github.com/lijiakof/react-native/blob/master/docs/react-native-navigation-components.md)
+* [React Native 项目结构](https://github.com/lijiakof/react-native/blob/master/docs/react-native-structure.md)
+* [React Native App 发布](https://github.com/lijiakof/react-native/blob/master/docs/react-native-publish.md)
 
 ## 技巧
 * [如何垂直居中](share/css-vetically.md)

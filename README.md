@@ -57,7 +57,7 @@
 ## Native 开发
 * [React Native 极速指南](share/react-native-tutorial.md)
 * [React Native 开发环境](share/react-native-environment.md)
-
+* [React Native Navigation](share/react-native-navigation.md)
 
 ## 技巧
 * [如何垂直居中](share/css-vetically.md)

@@ -1,19 +1,19 @@
 # React Native Navigation
 
-* 如何安装
-* 如何使用
-    * 创建导航
-    * 页面切换 & 传递参数
-    * 配置导航
+* How to install React Navigation
+* How to use
+    * Creating a stack navigator
+    * Moving between screens & Passing parameters
+    * Configuring
     * TabNavigator
 
-## 如何安装
+## How to install React Navigation
 * `yarn add react-navigation`
 * Or `npm install --save react-navigation`
 
-## 如何使用
+## How to use
 
-### 创建导航
+### Creating a stack navigator
 * create Screen(View) Component: Home
 * create StackNavigator: NavigationContainer
     * import createStackNavigator
@@ -83,7 +83,7 @@ import {name as appName} from './app.json';
 AppRegistry.registerComponent(appName, () => App);
 ```
 
-### 页面切换 & 传递参数
+### Moving between screens & Passing parameters
 * create Screen(View) Component: Demo
 * add Screen to Navigator
 * `this.props.navigation.navigate('Demo', { test: 'hello'})`
@@ -143,7 +143,7 @@ export default class HomeScreen extends React.Component {
 }
 ```
 
-### 配置导航
+### Configuring
 
 ### TabNavigator
 * StackNavigatorConfig

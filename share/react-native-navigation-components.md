@@ -1,4 +1,4 @@
-# React Native Navigation
+# React Native Navigation & Common Components
 
 * How to install React Navigation
 * How to use
@@ -6,6 +6,7 @@
     * Moving between screens & Passing parameters
     * Configuring
     * TabNavigator
+* Common Components
 
 ## How to install React Navigation
 * `yarn add react-navigation`
@@ -221,3 +222,16 @@ const StackNavigatorConfig = {
 
 export default createStackNavigator(NavigationRouteConfigMap, StackNavigatorConfig);
 ```
+
+# Common Components
+* react-native-i18n
+* react-native-qrcode
+* react-native-splash-screen
+* react-native-svg-icon
+* react-native-svg
+* react-native-vector-icons
+* react-native-device-info
+* react-native-camera
+* react-native-swiper
+* react-native-root-toast
+* [awesome-react-native](https://github.com/jondot/awesome-react-native)

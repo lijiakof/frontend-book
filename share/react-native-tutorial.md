@@ -1,4 +1,4 @@
-# React Native 极速指南
+# React Native Quick Start
 
 * How to install React Native
 * ABC

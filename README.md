@@ -111,10 +111,11 @@
 * [初识 Scrum 敏捷](share/agile-scrum.md)
 
 ## TODO
+* [屏幕上的“设计学”](share/css-screen-design.md)
+* [正则表达式](share/regular-expression.md)
 * Web3.js
 * [IPFS](share/blockchain-ipfs.md)
 * Javascript 的内存管理
-* 屏幕上的“设计学”
 * [贝塞尔曲线](share/bezier.md)
 * [认识 Git](share/git.md)
 * 响应式设计 9 大原则 http://blog.froont.com/9-basic-principles-of-responsive-web-design/

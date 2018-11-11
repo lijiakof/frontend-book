@@ -86,7 +86,7 @@
 * [Npm](share/npm.md)
 * [Bower](share/bower.md)
 * [Yarn](share/yarn.md)
-* [Jest 入门指南](share/jest.md)
+* [Jest](share/jest.md)
 * [PM2](share/pm2.md)
 
 ## 架构框架

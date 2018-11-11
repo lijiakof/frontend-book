@@ -82,9 +82,11 @@
 * [Grunt](share/grunt.md)
 * [Gulp](share/gulp.md)
 * [Webpack](https://github.com/lijiakof/webpack-tutorial)
-* [Bower](share/bower.md)
+* [Rollup](share/rollup.md)
 * [Npm](share/npm.md)
+* [Bower](share/bower.md)
 * [Yarn](share/yarn.md)
+* [Jest 入门指南](share/jest.md)
 * [PM2](share/pm2.md)
 
 ## 架构框架
@@ -100,9 +102,7 @@
 * [初识 Nodejs 原理](share/nodejs-how-it-works.md)
 * [Nuxt.js 入门指南](https://github.com/lijiakof/nuxt-tutorial)
 * [Babel 入门指南](share/babel.md)
-* [Jest 入门指南](share/jest.md)
 * [React Native](share/react-native.md)
-* [Rollup](share/rollup.md)
 * [百场汇 Web 前端](http://reecho.baichanghui.com/article/1)
 
 ## 软件工程
@@ -113,6 +113,7 @@
 
 ## TODO
 * [屏幕上的“设计学”](share/css-screen-design.md)
+* JSDoc
 * [正则表达式](share/regular-expression.md)
 * Web3.js
 * [IPFS](share/blockchain-ipfs.md)

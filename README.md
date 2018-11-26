@@ -63,6 +63,7 @@
 * [Flutter Dart 语言](https://github.com/lijiakof/flutter-tutorial/blob/master/docs/flutter-dart.md)
 * [Flutter 入门指南](https://github.com/lijiakof/flutter-tutorial/blob/master/docs/flutter-abc.md)
 * [Flutter 开始第一个 APP](https://github.com/lijiakof/flutter-tutorial/blob/master/docs/flutter-1st-app.md)
+* [Flutter Navigaor & Routing](https://github.com/lijiakof/flutter-tutorial/blob/master/docs/flutter-navigator.md)
 
 ## 技巧
 * [如何垂直居中](share/css-vetically.md)

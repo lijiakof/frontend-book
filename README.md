@@ -64,6 +64,7 @@
 * [Flutter 入门指南](https://github.com/lijiakof/flutter-tutorial/blob/master/docs/flutter-abc.md)
 * [Flutter 开始第一个 APP](https://github.com/lijiakof/flutter-tutorial/blob/master/docs/flutter-1st-app.md)
 * [Flutter Navigaor & Routing](https://github.com/lijiakof/flutter-tutorial/blob/master/docs/flutter-navigator.md)
+* [Flutter 部件简介](https://github.com/lijiakof/flutter-tutorial/blob/master/docs/flutter-widgets.md)
 
 ## 技巧
 * [如何垂直居中](share/css-vetically.md)

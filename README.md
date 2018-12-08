@@ -44,6 +44,7 @@
 * [YSlow团队提出的“23条 Web 性能最佳实践和规则”](share/yslow.md)
 * [Prerender（JavaScript 网站静态化）](share/prerender-server.md)
 * [一致性hash算法](share/consistent-hashing.md)
+* [Event Loop](share/js-eventloop.md)
 * [WEB 前端性能优化实战](share/web-front-performance.md)
 
 ## 区块链技术（Blockchain）
@@ -66,6 +67,8 @@
 * [Flutter Navigaor & Routing](https://github.com/lijiakof/flutter-tutorial/blob/master/docs/flutter-navigator.md)
 * [Flutter 部件简介](https://github.com/lijiakof/flutter-tutorial/blob/master/docs/flutter-widgets.md)
 * [Flutter 网络和存储](https://github.com/lijiakof/flutter-tutorial/blob/master/docs/flutter-http-storage.md)
+* [Flutter 原理简介](https://github.com/lijiakof/flutter-tutorial/blob/master/docs/flutter-principle.md)
+
 
 ## 技巧
 * [如何垂直居中](share/css-vetically.md)
@@ -115,7 +118,7 @@
 * [初识 Scrum 敏捷](share/agile-scrum.md)
 
 ## TODO
-* [Event Loop](share/js-eventloop.md)
+* 前端简史
 * [屏幕上的“设计学”](share/css-screen-design.md)
 * JSDoc
 * [正则表达式](share/regular-expression.md)

@@ -116,8 +116,10 @@
 * [UML 之活动图](share/uml-activity.md)
 * [初识 Scrum 敏捷](share/agile-scrum.md)
 
+## [《前端简史》](share/frontend-history.md)
+
 ## TODO
-* 前端简史
+* [计算机起源](share/computer-principle.md)
 * [屏幕上的“设计学”](share/css-screen-design.md)
 * JSDoc
 * [正则表达式](share/regular-expression.md)

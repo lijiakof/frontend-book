@@ -41,18 +41,36 @@
 * Spring MVC
 * 2007 .NET MVC
 * 2005 jQuery
+* underscore
 * prototype.js
+* ext
+* yui
 * 2009 angular
 * ?2010 requirejs
 * ?2010 commonjs
 * seajs
 * npm
 * dojo
-* backbone.js
+* 2010 backbone.js
+* knockoutjs
+* emberjs
 * 2013 bootstrap
+* bower
 * 2013 grunt
 * gulp
+* sass/scss
+* less
+* stylus
+* zepto
+* phonegap
+* jquerymobile
+* browserify
+* d3.js
+* three.js
 * webpack
+* yeoman
+* uglifyjs
+* babel
 * 2013 react
 * yarn
 * 2016 vue2

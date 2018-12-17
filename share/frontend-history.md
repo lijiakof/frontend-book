@@ -36,43 +36,51 @@
 * 1993 HTML
 * 1995 PHP (Personal Home Page Tools)
 * 1996 ASP
-* JSP
-* 2000 ASP.NET
+* 1999 JSP
+
+* 2002 ASP.NET
+* 2002 Spring
 * Spring MVC
 * 2007 .NET MVC
-* 2005 jQuery
-* underscore
-* prototype.js
-* ext
-* yui
+* ?2004 dojo
+* 2005 prototype.js
+* 2006 jQuery
+* 2006 yui
+* 2006 ext
+* 2006 sass/scss
+* 2006 GWT
+
+* 2008 gitHub
+* 2009 less
 * 2009 angular
-* ?2010 requirejs
-* ?2010 commonjs
-* seajs
-* npm
-* dojo
+* 2009 underscore
+* 2009 CommonJS
 * 2010 backbone.js
-* knockoutjs
-* emberjs
+* 2010 knockoutjs
+
+* 2010 zepto (2016)
+* 2010 npm
+* 2010 jquerymobile
+* ?2010 requirejs
+* 2011 emberjs
+* 2011 seajs
+* 2011 phonegap/Cordova
 * 2013 bootstrap
 * bower
-* 2013 grunt
-* gulp
-* sass/scss
-* less
+* 2012 grunt
+* 2014 gulp
 * stylus
-* zepto
-* phonegap
-* jquerymobile
 * browserify
 * d3.js
 * three.js
-* webpack
 * yeoman
 * uglifyjs
 * babel
+
+* 2012 webpack
 * 2013 react
-* yarn
+* 2016 yarn
+* 2016 angular2
 * 2016 vue2
 
 

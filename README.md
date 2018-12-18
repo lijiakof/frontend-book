@@ -108,7 +108,7 @@
 * [Nuxt.js 入门指南](https://github.com/lijiakof/nuxt-tutorial)
 * [Babel 入门指南](share/babel.md)
 * [React Native](share/react-native.md)
-* [百场汇 Web 前端](http://reecho.baichanghui.com/article/1)
+* [百场汇 Web 前端](share/web-baichanghui.md)
 
 ## 软件工程
 * [认识流程图](share/flow-chart.md)

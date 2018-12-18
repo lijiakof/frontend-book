@@ -93,5 +93,7 @@
 * 2016 angular2
 * 2016 vue2
     * 2016 nuxt
+* 2017 mini program
+* 2018 flutter
 
 

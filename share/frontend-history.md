@@ -32,16 +32,16 @@
 * WWW 万维网（World-Wide Web）
     * 蒂姆·伯纳斯·李 HTTP 协议，第一个网页浏览器：http://info.cern.ch/
 
-
+### 混沌时代
 * 1993 HTML
 * 1995 PHP (Personal Home Page Tools)
 * 1996 ASP
 * 1999 JSP
 
+### 混合时代
 * 2002 ASP.NET
 * 2002 Spring
 * Spring MVC
-* 2007 .NET MVC
 * ?2004 dojo
 * 2005 prototype.js
 * 2006 jQuery
@@ -49,38 +49,43 @@
 * 2006 ext
 * 2006 sass/scss
 * 2006 GWT
+* 2007 .NET MVC
 
+### 前端 MVC 时代（移动互联网）
 * 2008 gitHub
 * 2009 less
 * 2009 angular
 * 2009 underscore
 * 2009 CommonJS
+* 2009 node.js
+* 2010 npm
+* ?2010 requirejs
 * 2010 backbone.js
 * 2010 knockoutjs
-
+* 2010 stylus
+* 2010 three.js
 * 2010 zepto (2016)
-* 2010 npm
 * 2010 jquerymobile
-* ?2010 requirejs
+* 2010 uglifyjs
+* 2011 d3.js
 * 2011 emberjs
 * 2011 seajs
+* 2011 browserify
 * 2011 phonegap/Cordova
-* 2013 bootstrap
-* bower
+* 2012 bower
+* 2012 yeoman
 * 2012 grunt
-* 2014 gulp
-* stylus
-* browserify
-* d3.js
-* three.js
-* yeoman
-* uglifyjs
-* babel
 
+### 前后端合并时代
 * 2012 webpack
+* 2013 bootstrap
 * 2013 react
+    * 2016 next
+* 2014 gulp
+* ？2014 babel
 * 2016 yarn
 * 2016 angular2
 * 2016 vue2
+    * 2016 nuxt
 
 

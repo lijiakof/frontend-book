@@ -120,6 +120,7 @@
 * [前端简史](share/frontend-history.md)
 
 ## TODO
+* [GraphQL](share/graphql.md)
 * [计算机起源](share/computer-principle.md)
 * [屏幕上的“设计学”](share/css-screen-design.md)
 * JSDoc

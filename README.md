@@ -117,6 +117,9 @@
 * [UML 之活动图](share/uml-activity.md)
 * [初识 Scrum 敏捷](share/agile-scrum.md)
 
+## 其它
+* [elasticsearch](https://github.com/lijiakof/elasticsearch-tutorial/blob/master/docs/elasticsearch.md)
+
 ## 未来之路
 * [前端简史](share/frontend-history.md)
 

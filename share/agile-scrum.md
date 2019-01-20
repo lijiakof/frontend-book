@@ -94,7 +94,3 @@ Sprint Backlog 中的需求项来自于 Product Backlog，它是一份足够具�
 
 ## 参考
 http://www.scrumcn.com/agile/scrum-knowledge-library/scrum.html
-
-
-
-

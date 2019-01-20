@@ -118,13 +118,14 @@
 * [初识 Scrum 敏捷](share/agile-scrum.md)
 
 ## 其它
-* [elasticsearch](https://github.com/lijiakof/elasticsearch-tutorial/blob/master/docs/elasticsearch.md)
+* [Elasticsearch](https://github.com/lijiakof/elasticsearch-tutorial/blob/master/docs/elasticsearch.md)
 
 ## 未来之路
 * [前端简史](share/frontend-history.md)
 
 ## TODO
 * [GraphQL](share/graphql.md)
+* JavaScript 内存回收机制
 * HTTP2.0
 * [计算机起源](share/computer-principle.md)
 * [屏幕上的“设计学”](share/css-screen-design.md)

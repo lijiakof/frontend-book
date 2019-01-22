@@ -119,6 +119,7 @@
 
 ## 其它
 * [Elasticsearch](https://github.com/lijiakof/elasticsearch-tutorial/blob/master/docs/elasticsearch.md)
+* [Logstash](https://github.com/lijiakof/elasticsearch-tutorial/blob/master/docs/logstash.md)
 
 ## 未来之路
 * [前端简史](share/frontend-history.md)

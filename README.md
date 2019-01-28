@@ -87,6 +87,7 @@
 * [Babel 入门指南](share/babel.md)
 * [React Native](share/react-native.md)
 * [Koa 入门指南](https://github.com/lijiakof/koa-tutorial)
+* [GraphQL 极速指南](share/graphql.md)
 * [百场汇 Web 前端](share/web-baichanghui.md)
 
 ## Native 开发
@@ -125,7 +126,8 @@
 * [前端简史](share/frontend-history.md)
 
 ## TODO
-* [GraphQL](share/graphql.md)
+* [Eslint]()
+* [Sequelize]()
 * JavaScript 内存回收机制
 * HTTP2.0
 * [计算机起源](share/computer-principle.md)

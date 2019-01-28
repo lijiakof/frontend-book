@@ -24,7 +24,6 @@
 * [JavaScript 中的 this](share/javascript-this.md)
 * [ES6 迭代器](share/js-iterators.md)
 * [Web APP 站点的缓存问题](share/web-cache.md)
-* [如何解决 Ajax 的跨域问题](share/cross-domain.md)
 * [Html5 新特性之 Websocket](share/html5-websocket.md)
 * [Nodejs](share/nodejs.md)
 * [浏览器的缓存](share/browser-cache.md)
@@ -54,6 +53,7 @@
 * [如何制作 10px 或者更小像素的字体](share/css-fontsize-10px.md)
 * [如何计算文本的行数](share/js-calculate-font-row.md)
 * [如何解决 JS 中数字计算的精度问题](share/js-number-accuracy.md)
+* [如何解决 Ajax 的跨域问题](share/cross-domain.md)
 * [如何开启 Angular 单页应用的 H5 路由模式](share/angular-h5mode.md)
 * [如何在 AWS 中安装 Nodejs](share/aws-install-node.md)
 * [如何布局](share/html-layout.md)
@@ -133,6 +133,7 @@
 * [计算机起源](share/computer-principle.md)
 * [屏幕上的“设计学”](share/css-screen-design.md)
 * JSDoc
+* pure
 * [正则表达式](share/regular-expression.md)
 * Web3.js
 * [IPFS](share/blockchain-ipfs.md)
@@ -140,7 +141,6 @@
 * [贝塞尔曲线](share/bezier.md)
 * [认识 Git](share/git.md)
 * 响应式设计 9 大原则 http://blog.froont.com/9-basic-principles-of-responsive-web-design/
-* pure
 * [Karma & Jasmine](share/karma-jasmine.md)
 * [Yeoman](share/yeoman.md)
 * [浏览器工作原理](share/browser-work.md)

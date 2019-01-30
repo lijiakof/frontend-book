@@ -70,6 +70,7 @@
 * [Bower](share/bower.md)
 * [Yarn](share/yarn.md)
 * [Jest](share/jest.md)
+* [Eslint](share/eslint.md)
 * [PM2](share/pm2.md)
 
 ## 架构框架
@@ -126,7 +127,6 @@
 * [前端简史](share/frontend-history.md)
 
 ## TODO
-* [Eslint]()
 * [Sequelize]()
 * JavaScript 内存回收机制
 * HTTP2.0

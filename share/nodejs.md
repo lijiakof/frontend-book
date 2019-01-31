@@ -1,4 +1,4 @@
-# 什么是 Node.js
+# 初识 Nodejs
 Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。Node.js 的包管理器 npm，是全球最大的开源库生态系统。
 
 ## 安装
@@ -6,7 +6,7 @@ Node 的安装非常简单，不同的平台有不同的安装包，[下载安�
 
 ```
 $ node -v
-v5.8.0
+v10.15.0
 ```
 
 ## Hello World

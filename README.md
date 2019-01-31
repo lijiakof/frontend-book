@@ -25,7 +25,7 @@
 * [ES6 迭代器](share/js-iterators.md)
 * [Web APP 站点的缓存问题](share/web-cache.md)
 * [Html5 新特性之 Websocket](share/html5-websocket.md)
-* [Nodejs](share/nodejs.md)
+* [初识 Nodejs](share/nodejs.md)
 * [浏览器的缓存](share/browser-cache.md)
 * [响应式网站实战](share/responsive-web-design.md)
 
@@ -122,12 +122,12 @@
 ## 前端延展
 * [Elasticsearch](https://github.com/lijiakof/elasticsearch-tutorial/blob/master/docs/elasticsearch.md)
 * [Logstash](https://github.com/lijiakof/elasticsearch-tutorial/blob/master/docs/logstash.md)
+* [Sequelize](share/sequelize.md)
 
 ## 未来之路
 * [前端简史](share/frontend-history.md)
 
 ## TODO
-* [Sequelize]()
 * JavaScript 内存回收机制
 * HTTP2.0
 * [计算机起源](share/computer-principle.md)

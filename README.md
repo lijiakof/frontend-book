@@ -31,12 +31,11 @@
 
 ## 高级
 * [原型 Prototype](share/js-prototype.md)
-* [函数的 debounce 和 throttle](share/debounce-throttle.md)
+* [JavaScript 函数的去抖和节流（debounce & throttle）](share/debounce-throttle.md)
 * [事件的触发顺序](share/event-sequence.md)
 * [事件的冒泡](share/event-bubble.md)
 * [Promise 编程](share/js-promise.md)
 * [Async/Await](share/js-asyncawait.md)
-* [如何优雅的处理 async/await 异常](share/js-asyncawait-catch-error.md)
 * [你所不知道的 JavaScript II](share/amazing-javascript.md)
 * [HTTP 通讯 7 个步骤](share/http.md)
 * [HTTP 缓存机制](share/http-cache.md)
@@ -58,6 +57,7 @@
 * [如何在 AWS 中安装 Nodejs](share/aws-install-node.md)
 * [如何布局](share/html-layout.md)
 * [如何阻断运行中的 Javascript](share/js-blocking.md)
+* [如何优雅的处理 async/await 异常](share/js-asyncawait-catch-error.md)
 * [巧用 `::before` `::after` 伪类](share/css-before-after.md)
 * [开启 CSS 硬件加速，提高网站性能](share/css-hardware-accelerated.md)
 
@@ -128,6 +128,7 @@
 * [前端简史](share/frontend-history.md)
 
 ## TODO
+* [浏览器工作原理](share/browser-work.md)
 * JavaScript 内存回收机制
 * HTTP2.0
 * [计算机起源](share/computer-principle.md)
@@ -143,7 +144,6 @@
 * 响应式设计 9 大原则 http://blog.froont.com/9-basic-principles-of-responsive-web-design/
 * [Karma & Jasmine](share/karma-jasmine.md)
 * [Yeoman](share/yeoman.md)
-* [浏览器工作原理](share/browser-work.md)
 * [Viewport](share/html-meta-viewport.md)
 * [如何打造属于自己的框架](share/framework.md)
 * [传说中的九种算法](share/algorithm.md)

@@ -140,11 +140,11 @@ You can leave the default options and just press enter if you are ok with them.
 
 I need to know the IPv4 address of the network interface you want OpenVPN listening to.
 Unless your server is behind NAT, it should be your public IPv4 address.
-IP address: 10.5.211.148
+IP address: xxx.xxx.xxx.xxx
 
 It seems this server is behind NAT. What is its public IPv4 address or hostname?
 We need it for the clients to connect to the server.
-Public IPv4 address or hostname: 54.222.158.30
+Public IPv4 address or hostname: xxx.xxx.xxx.xxx
 Checking for IPv6 connectivity...
 
 Your host does not appear to have IPv6 connectivity.

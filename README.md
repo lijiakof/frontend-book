@@ -123,6 +123,10 @@
 * [Elasticsearch](https://github.com/lijiakof/elasticsearch-tutorial/blob/master/docs/elasticsearch.md)
 * [Logstash](https://github.com/lijiakof/elasticsearch-tutorial/blob/master/docs/logstash.md)
 * [Sequelize](share/sequelize.md)
+* [制作 SSL 免费证书](share/letsencrypt.md)
+* [Gitlab](share/gitlab.md)
+* [OpenVPN](share/openvpn.md)
+* [Lakka](share/lakka.md)
 
 ## 未来之路
 * [前端简史](share/frontend-history.md)

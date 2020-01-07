@@ -11,3 +11,5 @@ sync_changes.log
 sync_hook.script
 
 **/.Archive
+
+.DS_Store

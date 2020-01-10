@@ -280,3 +280,9 @@ CRL file: /etc/openvpn/easy-rsa/pki/crl.pem
 
 Certificate for client test revoked.
 ```
+
+### 相关命令
+* sudo systemctl start openvpn@server.service
+* sudo systemctl stop openvpn@server.service
+* sudo systemctl restart openvpn@server.service
+* sudo systemctl status openvpn@server.service

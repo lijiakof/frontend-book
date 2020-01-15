@@ -124,8 +124,14 @@
 * [Logstash](https://github.com/lijiakof/elasticsearch-tutorial/blob/master/docs/logstash.md)
 * [Sequelize](share/sequelize.md)
 * [制作 SSL 免费证书](share/letsencrypt.md)
-* [Gitlab](share/gitlab.md)
-* [OpenVPN](share/openvpn.md)
+* 开发环境搭建
+    * [OpenVPN](share/openvpn.md)
+    * [Gitlab](share/gitlab.md)
+    * [ELK](share/elk.md)
+    * verdaccio(私有NPM)
+* 存储搭建
+    * [MongoDB](share/mongodb.md)
+    * [Redis](share/redis.md)
 * [Lakka](share/lakka.md)
 
 ## 未来之路

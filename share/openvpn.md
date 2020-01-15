@@ -130,6 +130,7 @@ sudo chmod 755 openvpn-install.sh
 ```
 
 ### 运行安装过程
+
 ```
 sudo ./openvpn-install.sh
 Welcome to the OpenVPN installer!
@@ -228,6 +229,8 @@ Download the .ovpn file and import it in your OpenVPN client.
 ```
 
 ### 新增用户
+再次运行上面的脚本
+
 ```
 sudo ./openvpn-install.sh
 Welcome to OpenVPN-install!

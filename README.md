@@ -132,7 +132,8 @@
 * 存储搭建
     * [MongoDB](share/mongodb.md)
     * [Redis](share/redis.md)
-* [Lakka](share/lakka.md)
+* [hasura](share/hasura.md)
+* [Trojan](share/trojan.md)
 
 ## 未来之路
 * [前端简史](share/frontend-history.md)

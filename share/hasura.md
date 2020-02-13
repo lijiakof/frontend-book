@@ -130,3 +130,6 @@ $ docker-compose up -d
 
 ## 第三部：打开 Hasura 控制台
 在浏览器中输入：http://localhost:8080/console
+
+资源文件来自本地服务，配置如下：
+* HASURA_GRAPHQL_CONSOLE_ASSETS_DIR: /srv/console-assets

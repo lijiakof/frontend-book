@@ -65,7 +65,9 @@ Error: Package: containerd.io-1.2.10-3.2.el7.x86_64 (docker-ce-stable)
 7、aws 安装
 
 ```
-$ sudo syum install -y docker 
+$ sudo yum install -y http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.95-2.el7_6.noarch.rpm
+$ sudo rm /etc/yum.repos.d/docker*.repo
+$ sudo yum install -y docker 
 ```
 
 ### Docker Compose

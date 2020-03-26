@@ -284,6 +284,55 @@ CRL file: /etc/openvpn/easy-rsa/pki/crl.pem
 Certificate for client test revoked.
 ```
 
+## 用 Docker 安装
+
+### 下载 OpenVPN 镜像
+```
+docker pull kylemanna/openvpn
+```
+
+### 生成配置文件
+```
+docker run -v /home/tripio/docker_data/openvpn:/etc/openvpn --rm kylemanna/openvpn ovpn_genconfig -u udp://xxx.xxx.xxx.xxx
+```
+
+### 生成密钥
+```
+docker run -v /home/tripio/docker_data/openvpn:/etc/openvpn --rm -it kylemanna/openvpn ovpn_initpki
+```
+
+### 生成客户端证书
+```
+docker run -v /home/tripio/docker_data/openvpn:/etc/openvpn --rm -it kylemanna/openvpn easyrsa build-client-full $DNAME nopass
+```
+
+### 导出客户端配置
+```
+docker run -v /home/tripio/docker_data/openvpn:/etc/openvpn --rm kylemanna/openvpn ovpn_getclient $DNAME > /home/tripio/docker_data/openvpn/conf/$DNAME.ovpn
+```
+
+### 撤销客户端证书
+```
+docker run -v /home/tripio/docker_data/openvpn:/etc/openvpn --rm -it kylemanna/openvpn easyrsa revoke $DNAME
+docker run -v /home/tripio/docker_data/openvpn:/etc/openvpn --rm -it kylemanna/openvpn easyrsa gen-crl
+# docker run -v /home/tripio/docker_data/openvpn:/etc/openvpn --rm -it kylemanna/openvpn rm -f /etc/openvpn/pki/reqs/"$DNAME".req
+# docker run -v /home/tripio/docker_data/openvpn:/etc/openvpn --rm -it kylemanna/openvpn rm -f /etc/openvpn/pki/private/"$DNAME".key
+# docker run -v /home/tripio/docker_data/openvpn:/etc/openvpn --rm -it kylemanna/openvpn rm -f /etc/openvpn/pki/issued/"$DNAME".crt
+docker restart openvpn
+rm /home/tripio/docker_data/openvpn/conf/$DNAME.ovpn
+```
+
+### 启动 OpenVPN
+```
+docker run --name openvpn -v /home/tripio/docker_data/openvpn:/etc/openvpn -d -p 1194:1194/udp --cap-add=NET_ADMIN kylemanna/openvpn
+```
+
+之后的启动\停止可以用：
+```
+docker stop openvpn
+docker start openvpn
+```
+
 ### 相关命令
 * sudo systemctl start openvpn@server.service
 * sudo systemctl stop openvpn@server.service

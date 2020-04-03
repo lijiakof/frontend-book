@@ -47,5 +47,21 @@ sudo certbot -d www.xxx.com --manual --preferred-challenges dns certonly
 每个网站有不同的架构和部署结构，有的有负载均衡、有的是 Nginx、有的是 Tomcat，导入证书各有各的方式，自行处理。
 
 ## Liunx
-TODO：
+* https://certbot.eff.org/instructions
+* SSH into the server
+* Enable EPEL repo
+    * aws2 install: sudo amazon-linux-extras install epel
+    * aws2 enable: sudo yum-config-manager --enable epel
+    * https://amazonaws-china.com/cn/premiumsupport/knowledge-center/ec2-enable-epel/
+* Enable the optional channel
+    * yum -y install yum-utils
+    * yum-config-manager --enable rhui-REGION-rhel-server-extras rhui-REGION-rhel-server-optional
+* Install Certbot
+    * sudo yum install certbot
+* Create SSL
+    * sudo certbot certonly -d *.tripiochina.cn
+    * [OK]sudo certbot --manual certonly -d *.tripiochina.cn --debug --no-self-upgrade
+* Renew
+* SSL path
+    * /etc/letsencrypt/live/
 

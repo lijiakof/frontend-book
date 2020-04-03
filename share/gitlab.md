@@ -33,6 +33,7 @@ sudo EXTERNAL_URL="https://gitlab.example.com" yum install -y gitlab-ee
 *参考：https://about.gitlab.com/install/*
 
 ## 配置 SSL
+* /etc/gitlab/
 * external_url "https://gitlab.example.com"
 * nginx['enable'] = true
 * nginx['redirect_http_to_https'] = true
@@ -48,7 +49,10 @@ sudo EXTERNAL_URL="https://gitlab.example.com" yum install -y gitlab-ee
 
 * sudo yum install gitlab-runner
 * sudo gitlab-runner register
-    * 通过 root 用户登陆 gitlab 站点，找到相关的 URL 和 token
+    * 通过 root 用户登陆 gitlab 后台，找到相关的 URL 和 token
+* 通过 root 登陆 Gitlab 后台，配置 Runner
+    * Run untagged jobs: 勾选上
+    * 将项目添加到：Restrict projects for this Runner
 * 在项目中添加 .gitlab-ci.yml 配置文件
 * sudo gitlab-runner restart
 
@@ -78,7 +82,7 @@ cat /home/gitlab-runner/.gitconfig
     sslVerify = false 
 ```
 
-安装 Node
+* 安装 Node
 
 ```
 curl --silent --location https://rpm.nodesource.com/setup_12.x | sudo bash -

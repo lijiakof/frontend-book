@@ -132,7 +132,9 @@
 * 存储搭建
     * [MongoDB](share/mongodb.md)
     * [Redis](share/redis.md)
-* [hasura](share/hasura.md)
+* [Hasura](share/hasura.md)
+* [Tensorflow](share/tensorflow.md)
+* [Yum](share/yum.md)
 * [Trojan](share/trojan.md)
 
 ## 未来之路

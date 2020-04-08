@@ -44,6 +44,7 @@
 * [一致性hash算法](share/consistent-hashing.md)
 * [Event Loop](share/js-eventloop.md)
 * [WEB 前端性能优化实战](share/web-front-performance.md)
+* [斐波那契数列](share/fibonacci.md)
 
 ## 技巧
 * [如何垂直居中](share/css-vetically.md)

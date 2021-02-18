@@ -1,4 +1,4 @@
-# 微前端技术在商羚商户端的运用
+# 微前端技术在商羚商户端的实战
 Web 应用从前后端混合时代，到前后端分离时代，前端不仅业务越来越繁多并且交互越来越复杂，前端应用也越来越庞大，参与开发的团队也越来越多。前端应用的拆分是必经之路，我们有很多方案去拆分，通过服务端路由分发（`Nginx`）、`iFrame`、公共组件的引用等等，它们各有优缺点，我们需要在技术难度和用户体验上做出决策。好在极客们永远不会妥协，微前端技术应用而生。
 
 这篇文章您将了解：
@@ -143,7 +143,7 @@ document.addEventListener('event-a', function(e){
 document.dispatchEvent(event);
 ```
 
-还在 `qiankun` 框架已经为我们准备好了基于 `props` 的通讯方式（类似于 React 中组件间通信的方案），主应用和子应用之间可以通过设置和监听全局状态，来相互传递信息。
+好在 `qiankun` 框架已经为我们准备好了基于 `props` 的通讯方式（类似于 React 中组件间通信的方案），主应用和子应用之间可以通过设置和监听全局状态，来相互传递信息。
 
 主应用：
 ```js
@@ -362,7 +362,7 @@ if (!window.__POWERED_BY_QIANKUN__) {
 }
 ```
 
-`rouer.ts` 文件：
+`router.ts` 文件：
 ``` ts
 import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';

@@ -92,6 +92,7 @@
 * [Koa 入门指南](https://github.com/lijiakof/koa-tutorial)
 * [GraphQL 极速指南](share/graphql.md)
 * [百场汇 Web 前端](share/web-baichanghui.md)
+* [微前端技术在商羚商户端的运用](share/microfront4selling.md)
 
 ## Native 开发
 * [React Native 极速指南](https://github.com/lijiakof/react-native/blob/master/docs/react-native-tutorial.md)
@@ -143,6 +144,8 @@
 * [前端简史](share/frontend-history.md)
 
 ## TODO
+* Shadow DOM
+* JavaScript 沙箱实现
 * [浏览器工作原理](share/browser-work.md)
 * JavaScript 内存回收机制
 * HTTP2.0

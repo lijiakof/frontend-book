@@ -92,6 +92,7 @@
 * [GraphQL 极速指南](share/graphql.md)
 * [百场汇 Web 前端](share/web-baichanghui.md)
 * [微前端技术在商羚商户端的运用](share/microfront4selling.md)
+* [电商SaaS店铺装修系统实战从0到1](share/saas-store-decoration.md)
 
 ## Native 开发
 * [React Native 极速指南](https://github.com/lijiakof/react-native/blob/master/docs/react-native-tutorial.md)

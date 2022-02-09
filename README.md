@@ -143,6 +143,7 @@
 
 ## 未来之路
 * [前端简史](share/frontend-history.md)
+* [wtfjs](share/wtfjs.md)
 
 ## TODO
 * Shadow DOM
